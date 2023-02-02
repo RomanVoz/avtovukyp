@@ -12,54 +12,88 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Автовыкуп просто</title>
 </head>
-<header>
-    <a href="#">
-        <img src="./img/Logo/logos@1x.png" alt="Лого">
-    </a>
-    <ul>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Услуги</a></li>
-        <li><a href="#">Статьи</a></li>
-    </ul>
-    <a href="tel:+380959855525">095-985-55-25</a>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <a class="header__logo" href="#">
+                <img src="./img/Logo/logo.png" alt="Лого">
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a class="header__link" href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#">Статьи</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header__contact" href="tel:+380959855525">095-985-55-25</a>
+        </div>
+    </div>
 </header>
 <body>
-    <!-- <section>
-        <h1>Автовыкуп просто в киеве и киевской области</h1>
-        <ul>
-            <li>
-                <svg class="" width="125" height="100">
-              <use href="./img/icons.svg#icon-crush"></use>
-            </svg>
-            <p>Выкуп авто после ДТП</p>
-            <button type="button">Подробнее</button>
-        </li>
-            <li>
-                <svg class="" width="125" height="100">
-              <use href="./img/icons.svg#icon-speedIcon"></use>
-            </svg>
-            <p>Cрочный выкуп авто</p>
-            <button type="button">Подробнее</button>
-        </li>
-            <li>
-                <svg class="" width="125" height="100">
-              <use href="./img/icons.svg#icon-key"></use>
-            </svg>
-            <p>Выкуп кредитных авто</p>
-            <button type="button">Подробнее</button>
-        </li>
-            <li>
-                <svg class="" width="125" height="100">
-              <use href="./img/icons.svg#icon-machine"></use>
-            </svg>
-            <p>Выкуп коммерческого транспорта</p>
-            <button type="button">Подробнее</button>
-        </li>
-        </ul>
+
+<!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__body">
+                <h1 class="hero__title">Автовыкуп просто <span class="hero__title-second">в киеве и киевской области</span></h1>
+                <ul class="hero__list-icon">
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-crush"></use>
+                            </svg>
+                            <p class="icon__text">Выкуп авто после ДТП</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-speedIcon"></use>
+                            </svg>
+                            <p class="icon__text">Cрочный выкуп авто</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-key"></use>
+                            </svg>
+                            <p class="icon__text">Выкуп кредитных авто</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-machine"></use>
+                            </svg>
+                            <p class="icon__text">Выкуп коммерческого транспорта</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section>
+    <!-- INFO-AVTO -->
+    <!-- <section>
         <h2>Какие авто мы выкупаем?</h2>
         <svg class="" width="" height="">
           <use href="./img/icons.svg#icon-bullet"></use>
@@ -101,220 +135,289 @@
                 </a>
             </li>
         </ul>
+    </section> -->
+
+<!-- STEPS -->
+    <section>
+        <div class="container">
+            <h2 class="steps__title">Этапы выкупа автомобилей</h2>
+            <div class="title__bullet">
+                    <svg class="icon-bullet" width="19" height="12">
+                    <use href="./img/icons.svg#icon-bullet"></use>
+                    </svg>
+                <p class="steps__text">от звонка до денежного перевода</p>
+            </div>
+            <div class="steps__body">
+                <ul class="speps__list">
+                    <li>
+                        <svg class="steps__icon" width="120" height="120">
+                        <use href="./img/icons.svg#icon-document2"></use>
+                        </svg>
+                        <p class="steps__icon-text" >Заявка для оценки авто</p>
+                    </li>
+                    <li>
+                        <svg class="steps__icon" width="120" height="120">
+                        <use href="./img/icons.svg#icon-telephone"></use>
+                        </svg>
+                        <p class="steps__icon-text" >Звонок автоэксперта</p>
+                    </li>
+                    <li>
+                        <svg class="steps__icon" width="120" height="120">
+                        <use href="./img/icons.svg#icon-deal"></use>
+                        </svg>
+                        <p class="steps__icon-text">Осмотр вашего авто</p>
+                    </li>
+                    <li>
+                        <svg class="steps__icon" width="120" height="120">
+                        <use href="./img/icons.svg#icon-document"></use>
+                        </svg>
+                        <p class="steps__icon-text" >Заключение договора</p>
+                    </li>
+                    <li>
+                        <svg class="steps__icon" width="120" height="120">
+                        <use href="./img/icons.svg#icon-card"></use>
+                        </svg>
+                        <p class="steps__icon-text" >Оплата на банковский счет</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Этапы выкупа автомобилей</h2>
-        <svg class="" width="" height="">
-          <use href="./img/icons.svg#icon-bullet"></use>
-        </svg>
-        <p>от звонка до денежного перевода</p>
-        <ul>
-            <li>
-                <svg class="" width="100" height="100">
-                  <use href="./img/icons.svg#icon-document2"></use>
-                </svg>
-                <p>Заявка для оценки авто</p>
-            </li>
-            <li>
-                <svg class="" width="100" height="100">
-                  <use href="./img/icons.svg#icon-telephone"></use>
-                </svg>
-                <p>Звонок автоэксперта</p>
-            </li>
-            <li>
-                <svg class="" width="100" height="100">
-                  <use href="./img/icons.svg#icon-deal"></use>
-                </svg>
-                <p>Осмотр вашего авто/p>
-            </li>
-            <li>
-                <svg class="" width="100" height="100">
-                  <use href="./img/icons.svg#icon-document"></use>
-                </svg>
-                <p>Заключение договора</p>
-            </li>
-            <li>
-                <svg class="" width="100" height="100">
-                  <use href="./img/icons.svg#icon-card"></use>
-                </svg>
-                <p>Оплата на банковский счет</p>
-            </li>
-        </ul>
+    <!-- FORM AVTO -->
+    <section class="section__fon">
+        <div class="container">
+            <div class="form__avto">
+                <form class="form__avto-body">
+                    <span class="form__avto-text">Узнай стоимость своего авто</span>
+                    <label>
+                        <input 
+                        class="form__avto-name"
+                        type="name"
+                        placeholder="Ваше имя">
+                    </label>
+                    <label>
+                        <input 
+                        class="form__avto-name"
+                        type="phone"
+                        placeholder="Номер телефона">
+                    </label>
+                    <label>
+                        <input 
+                        class="form__avto-name"
+                        type="avto"
+                        placeholder="Марка авто">
+                    </label>
+                    <button class="form__avto-bt" type="button">Расчитать стоимость
+                    </button>
+                </form>
+            </div>
+        </div>
     </section>
 
+    <!-- WHY US -->
     <section>
-        <h3>Узнай стоимость своего авто</h3>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-        <button type="button">Расчитать стоимость</button>
+        <div class="container">
+            <div class="why__avto">
+                    <h2 class="steps__title">Почему именно Автовыкуп-Prosto?</h2>
+                <div class="title__bullet">
+                    <svg class="icon-bullet" width="19" height="12">
+                    <use href="./img/icons.svg#icon-bullet"></use>
+                    </svg>
+                    <p class="steps__text">как мы завоевываем доверие клиентов</p>
+                </div>
+                        <svg class="icon-15" width="290" height="250">
+                        <use href="./img/icons.svg#15"></use>
+                        </svg>
+                <img class="why__img" src="./img/avto.png" alt="авто">
+                <div class="why__for-us-body">
+                    <h3 class="why__for-us">Про нас</h3>
+                    <p class="why__text">
+                        Наша специализация- выкуп автомобилей по Киеву. За годы практики мы 
+                        отточили процесс выкупа до идеала, что позволяет нам занять лидирующие 
+                        позиции на рынке.</p>
+                        
+                    <p class="why__text"> Мы лояльно относимся клиентам,  именно по этой причине предусмотрен 
+                        выезд оценщика бесплатно в день заявки. Так же возможна оценка по фото, 
+                        видео или в режиме видеозвонка.</p>
+                        
+                    <p class="why__text"> Если вам необходим быстрый выкуп автомобиля с оформлением в соответсвии 
+                        с законодательством- ждем вашего звонка. </p>
+                    
+                    <p>Просто. Быстро и надежно.</p>
+                </div>
+                <ul class="why__quality">
+                    <li>
+                        <p class="quality__title">Быстрее некуда</p>
+                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                    </li>
+                    <li>
+                        <p class="quality__title">Быстрее некуда</p>
+                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                    </li>
+                    <li>
+                        <p class="quality__title">Адекватная оценка</p>
+                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                    </li>
+                    <li>
+                        <p class="quality__title">Вывоз автомобиля</p>
+                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                    </li>
+                </ul>
+            </div>
     </section>
 
-    <section>
-        <h2>Почему именно Автовыкуп-Prosto?</h2>
-        <svg class="" width="" height="">
-          <use href=""></use>
-        </svg>
-        <p>как мы завоевываем доверие клиентов</p>
-        <img src="" alt="">
-        <h3>Про нас</h3>
-        <p>Про нас
-            Наша специализация- выкуп автомобилей по Киеву.         За годы практики мы отточили процесс выкупа до идеала, что позволяет нам занять лидирующие позиции на рынке.
-            Мы лояльно относимся клиентам,  именно по этой причине предусмотрен выезд оценщика бесплатно в день заявки. Так же возможна оценка по фото, видео или в режиме видеозвонка.
-            Если вам необходим быстрый выкуп автомобиля с оформлением в соответсвии с законодательством- ждем вашего звонка. 
-            Просто. Быстро и надежно.</p>
+    <!-- CREDIT AVTO -->
+    <section class="credit section__fon">
+        <div class="container">
+            <h2 class="steps__title">Автомобиль уже в залоге?</h2>
+            <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+                <p class="steps__text">для нас это не проблема</p>
+            </div>
+                <div class="credit__body">
+                    <ul class="credit__list">
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Выкуп кредитных авто</p>
+                        </li>
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Выкуп авто в залоге</p>
+                        </li>
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Выкуп авто из ломбарда</p>
+                        </li>
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Выкуп  лизинговых авто</p>
+                        </li>
+                    </ul>
+                    <img class="credit__many" src="./img/credit/many.png" alt="деньги">
+                    <img class="credit__lock" src="./img/credit/lock.png" alt="замок">
+                    <img class="credit__avto" src="./img/credit/avto.png" alt="авто">
+                </div>
+        </div>
+    </section>
 
-            <ul>
+    <!-- DOCUMENT -->
+    <section>
+        <div class="container">
+            <h2 class="steps__title">Необходимые документы</h2>
+            <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+                <p class="steps__text">для быстрого выкупа</p>
+            </div>
+            <ul class="document__list">
                 <li>
-                    <h3>Быстрее некуда</h3>
-                    <p>Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                    <p class="document__text">Паспорт  ТС</p>
                 </li>
                 <li>
-                    <h3>Быстрее некуда</h3>
-                    <p>Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                    <p class="document__text">Паспорт или ID владельца ТС</p>
                 </li>
                 <li>
-                    <h3>Адекватная оценка</h3>
-                    <p>Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
-                </li>
-                <li>
-                    <h3>Вывоз автомобиля</h3>
-                    <p>Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                    <p class="document__text">Номер банковского счета владельца ТС</p>
                 </li>
             </ul>
+        </div>
     </section>
-
-    <section>
-        <h2>Автомобиль уже в залоге?</h2>
-        <svg class="" width="" height="">
-          <use href=""></use>
-        </svg>
-        <p>для нас это не проблема</p>
-        <img src="" alt="">4
-        <ul>
-            <li>
-                <svg class="" width="" height="">
-                  <use href=""></use>
+    <section class="section__fon">
+        <div class="container">
+            <h2 class="steps__title" >Отзывы клиентов </h2>
+            <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
                 </svg>
-                <p>Выкуп кредитных авто</p>
-            </li>
+                <p class="steps__text">что о нас говорят?</p>
+            </div>
+        </div>
+        <ul class="reviews__list">
             <li>
-                <svg class="" width="" height="">
-                  <use href=""></use>
-                </svg>
-                <p>Выкуп авто в залоге</p>
-            </li>
-            <li>
-                <svg class="" width="" height="">
-                  <use href=""></use>
-                </svg>
-                <p>Выкуп авто из ломбарда</p>
-            </li>
-            <li>
-                <svg class="" width="" height="">
-                  <use href=""></use>
-                </svg>
-                <p>Выкуп  лизинговых авто</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Необходимые документы</h2>
-        <svg class="" width="" height="">
-          <use href=""></use>
-        </svg>
-        <p>для быстрого выкупа</p>
-        <ul>
-            <li>
-                <p>Паспорт  ТС</p>
-            </li>
-            <li>
-                <p>Паспорт или ID владельца ТС</p>
-            </li>
-            <li>
-                <p>Номер банковского счета владельца ТС</p>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Отзывы клиентов </h2>
-        <svg class="" width="" height="">
-          <use href=""></use>
-        </svg>
-        <p>что о нас говорят?</p>
-        <ul>
-            <li>
-                <p>Дмитрий Назаренко</p>
-                <p>Современный автовыкуп.
+                <p class="reviews__name">Дмитрий Назаренко</p>
+                <p class="reviews__text">Современный автовыкуп.
                     Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
                     Рекомендую!</p>
             </li>
             <li>
-                <p>Дмитрий Назаренко</p>
-                <p>Современный автовыкуп.
+                <p class="reviews__name">Дмитрий Назаренко</p>
+                <p class="reviews__text">Современный автовыкуп.
                     Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
                     Рекомендую!</p>
             </li>
             <li>
-                <p>Дмитрий Назаренко</p>
-                <p>Современный автовыкуп.
+                <p class="reviews__name">Дмитрий Назаренко</p>
+                <p class="reviews__text">Современный автовыкуп.
                     Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
                     Рекомендую!</p>
             </li>
         </ul>
     </section>
-
+<!-- QUESTIONS -->
     <section>
-        <h2>Часто задаваемые вопросы</h2>
-        <svg class="" width="" height="">
-          <use href=""></use>
-        </svg>
-        <p>все что нужно знать</p>
-        <ul>
-            <li>
-                <h3>Машина не на ходу, как ее доставить?</h3>
-                <p>Автомобиль оценивается по разному, в зависимости от 
-                    года выпуска, марки, и других факторов, таких как ее состояние, 
-                    способность заводиться или двигаться. Вот некоторые вещи которые 
-                    следует помнить: правильно ли работает электрика? В каком 
-                    состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
-            </li>
-            <li>
-                <h3>Машина не на ходу, как ее доставить?</h3>
-                <p>Автомобиль оценивается по разному, в зависимости от 
-                    года выпуска, марки, и других факторов, таких как ее состояние, 
-                    способность заводиться или двигаться. Вот некоторые вещи которые 
-                    следует помнить: правильно ли работает электрика? В каком 
-                    состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
-            </li>
-            <li>
-                <h3>Машина не на ходу, как ее доставить?</h3>
-                <p>Автомобиль оценивается по разному, в зависимости от 
-                    года выпуска, марки, и других факторов, таких как ее состояние, 
-                    способность заводиться или двигаться. Вот некоторые вещи которые 
-                    следует помнить: правильно ли работает электрика? В каком 
-                    состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
-            </li>
-            <li>
-                <h3>Машина не на ходу, как ее доставить?</h3>
-                <p>Автомобиль оценивается по разному, в зависимости от 
-                    года выпуска, марки, и других факторов, таких как ее состояние, 
-                    способность заводиться или двигаться. Вот некоторые вещи которые 
-                    следует помнить: правильно ли работает электрика? В каком 
-                    состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
-            </li>
-            <li>
-                <h3>Машина не на ходу, как ее доставить?</h3>
-                <p>Автомобиль оценивается по разному, в зависимости от 
-                    года выпуска, марки, и других факторов, таких как ее состояние, 
-                    способность заводиться или двигаться. Вот некоторые вещи которые 
-                    следует помнить: правильно ли работает электрика? В каком 
-                    состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2 class="steps__title">Часто задаваемые вопросы</h2>
+            <div class="title__bullet">
+                <svg class="icon__bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+                <p class="steps__text">все что нужно знать</p>
+            </div>
+            <ul>
+                <li>
+                    <h3>Машина не на ходу, как ее доставить?</h3>
+                    <p>Автомобиль оценивается по разному, в зависимости от 
+                        года выпуска, марки, и других факторов, таких как ее состояние, 
+                        способность заводиться или двигаться. Вот некоторые вещи которые 
+                        следует помнить: правильно ли работает электрика? В каком 
+                        состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
+                </li>
+                <li>
+                    <h3>Машина не на ходу, как ее доставить?</h3>
+                    <p>Автомобиль оценивается по разному, в зависимости от 
+                        года выпуска, марки, и других факторов, таких как ее состояние, 
+                        способность заводиться или двигаться. Вот некоторые вещи которые 
+                        следует помнить: правильно ли работает электрика? В каком 
+                        состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
+                </li>
+                <li>
+                    <h3>Машина не на ходу, как ее доставить?</h3>
+                    <p>Автомобиль оценивается по разному, в зависимости от 
+                        года выпуска, марки, и других факторов, таких как ее состояние, 
+                        способность заводиться или двигаться. Вот некоторые вещи которые 
+                        следует помнить: правильно ли работает электрика? В каком 
+                        состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
+                </li>
+                <li>
+                    <h3>Машина не на ходу, как ее доставить?</h3>
+                    <p>Автомобиль оценивается по разному, в зависимости от 
+                        года выпуска, марки, и других факторов, таких как ее состояние, 
+                        способность заводиться или двигаться. Вот некоторые вещи которые 
+                        следует помнить: правильно ли работает электрика? В каком 
+                        состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
+                </li>
+                <li>
+                    <h3>Машина не на ходу, как ее доставить?</h3>
+                    <p>Автомобиль оценивается по разному, в зависимости от 
+                        года выпуска, марки, и других факторов, таких как ее состояние, 
+                        способность заводиться или двигаться. Вот некоторые вещи которые 
+                        следует помнить: правильно ли работает электрика? В каком 
+                        состоянии двигатель? Какой пробег? Участвовало ТС в ДТП?</p>
+                </li>
+            </ul>
+        </div>
     </section>
     <section>
         <h2>Остались еще вопросы?</h2>
@@ -371,7 +474,7 @@
             </li>
         </ul>
         <p>Быстро, просто, надежно.  ⒸАвтовыкуп-Prosto</p>
-    </footer> -->
+    </footer>
     <script
     defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

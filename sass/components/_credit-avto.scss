@@ -1,0 +1,40 @@
+.credit__body {
+    position: relative;
+}
+
+.credit__list {
+    padding-bottom: 145px;
+}
+
+.credit__list li {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.credit__text {
+    padding-left: 20px;
+
+    font-family: var(--general-font);
+    font-size: 24px;
+    line-height: 115%;
+    text-decoration-line: underline;
+    color: var(--color-title-first);
+}
+
+.credit__many {
+    position: absolute;
+    top: -50%;
+    left: 45%;
+}
+
+.credit__lock {
+    position: absolute;
+    top: -30%;
+    left: 75%;
+}
+
+.credit__avto {
+    position: absolute;
+    top: -15%;
+    left: 45%;
+}
