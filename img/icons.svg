@@ -76,5 +76,13 @@
       <path d="M10.496 0h-10.496v5.729h4.286v25.6h6.21v-31.329z"></path>
       <path d="M26.028 9.98c-1.356 0-2.668 0.224-3.849 0.582l0.262-5.013h12.595v-5.55h-17.887l-0.918 15.082 5.117 3.088c0.875-1.611 2.799-2.685 4.723-2.685 2.93 0 5.248 2.282 5.248 5.236 0 2.999-2.362 5.281-5.379 5.281-2.843 0-4.986-2.059-5.248-4.834h-6.035c0.219 6.31 4.767 10.831 11.24 10.831 6.648 0 11.415-4.654 11.415-11.278 0-6.579-4.723-10.741-11.283-10.741z"></path>
     </symbol>
+    <symbol id="close" viewBox="0 0 30 32">
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M28.444 3.429l-25.142 25.142"></path>
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M28.444 28.57l-25.142-25.142"></path>
+    </symbol>
+    <symbol id="open" viewBox="0 0 32 32">
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M16 1.455v29.091"></path>
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M30.545 16h-29.091"></path>
+    </symbol>
   </defs>
 </svg>

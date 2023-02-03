@@ -32,3 +32,35 @@
     line-height: 115%;
     color: var(--text-color-general);
 }
+
+.footer__navigation {
+    padding-top: 100px;
+}
+
+.footer__logo {
+    width: 175px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.footer__logo-text {
+
+    font-family: var(--general-font);
+    font-size: 22px;
+    line-height: 145%;
+    color: var(--text-color-general);
+}
+
+.footer__list {
+    margin-left: 75px;
+}
+
+.footer__list>li {
+    padding-bottom: 20px;
+    
+    font-family: var(--general-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+    color: var(--text-color-general);
+}
