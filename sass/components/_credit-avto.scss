@@ -3,7 +3,11 @@
 }
 
 .credit__list {
-    padding-bottom: 145px;
+    padding: 0;
+    
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 145px;
+    }
 }
 
 .credit__list li {
@@ -15,26 +19,53 @@
     padding-left: 20px;
 
     font-family: var(--general-font);
-    font-size: 24px;
+    font-size: 20px;
     line-height: 115%;
     text-decoration-line: underline;
     color: var(--color-title-first);
+
+    @media screen and (min-width: $desktop) {
+        font-size: 24px;
+    }
 }
 
 .credit__many {
+    @media screen and (max-width: $mobile) {
+
     position: absolute;
-    top: -50%;
-    left: 45%;
+    width: 220px;
+    height: 145px;
+}
+    @media screen and (min-width: $desktop) {
+        top: -50%;
+        left: 45%;
+    }
+    
 }
 
 .credit__lock {
     position: absolute;
-    top: -30%;
-    left: 75%;
+    width: 95px;
+    height: 85px;
+    z-index: 0;
+
+
+    @media screen and (min-width: $desktop) {
+        top: -30%;
+        left: 75%;
+    }
 }
 
 .credit__avto {
-    position: absolute;
-    top: -15%;
-    left: 45%;
+    margin: 0;
+    padding: 0;
+    width: 440px;
+    height: 150px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        top: -15%;
+        left: 45%;
+    }
 }

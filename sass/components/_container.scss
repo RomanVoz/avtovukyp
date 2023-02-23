@@ -1,6 +1,6 @@
 $mobile: 320px;
 $tablet: 767px;
-$desktop: 1300px;
+$desktop: 1200px;
 
 
 .container {
@@ -10,13 +10,13 @@ $desktop: 1300px;
 
     // outline: 2px red solid;
 
-    // @media screen and (max-width: $mobile) {
-    // width: $mobile;
-    // }
+    @media screen and (max-width: $mobile) {
+    width: $mobile;
+    }
 
-    // @media screen and (min-width: $tablet) {
-    // width: $tablet;
-    // }
+    @media screen and (min-width: $tablet) {
+    width: $tablet;
+    }
 
     @media screen and (min-width: $desktop) {
     width: $desktop;

@@ -5,39 +5,61 @@
 
 .form__avto-body {
     text-align: center;
-    // margin-left: 200px;
-    // margin-right: 200px;
     background-color: #FFFFFF;
     border: 2px solid #503428;
     border-radius: 10px;
     padding-bottom: 40px;
 }
 
+.form__avto-body label {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+    @media screen and (min-width: $desktop) {
+        display: inline;
+    }
+}
+
 .form__avto-text {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: center;
+
     padding-top: 30px;
     margin-bottom: 20px;
+    width: 400px;
 
     font-family: var(--second-font);
     font-size: 30px;
     line-height: 125%;
     text-transform: uppercase;
     color: var(--color-title-first);
+
+    @media screen and (min-width: $tablet) {
+        width: auto;
+    }
 }
 
 .form__avto-name {
     flex-direction: row;
     align-items: center;
     padding: 15px 20px;
+    margin-bottom: 12px;
     gap: 10px;
 
-    width: 310px;
+    width: 80%;
     height: 53px;
 
     background: #F4F6FA;
     border: 1px solid #B8BABE;
     border-radius: 10px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0px;
+        width: 260px;
+    }
 }
 
 .form__avto-bt {

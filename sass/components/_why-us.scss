@@ -4,17 +4,37 @@
 
 .icon-15 {
     position: absolute;
+    margin-top: 30px;
     fill: #503428;
+
+    z-index: -1;
+    @media screen and (min-width: $desktop) {
+        top: 23%;
+        left: 0;
+        width: 180px;
+        height: 155px;
+    }
 }
 
 .why__img {
-    position: absolute;
-    top: 23%;
-    left: 0;
+    // position: absolute;
+    // top: 10px;
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        top: 0;
+        top: 23%;
+        left: 0;
+    }
 }
+
 .why__for-us-body {
-    width: 400px;
+    position: relative;
     margin-left: auto;
+
+    @media screen and (min-width: $desktop) {
+        position: static;
+        width: 400px;
+    }
 }
 
 .why__for-us {}
@@ -30,9 +50,14 @@
 
 .why__quality {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 115px;
     gap: 20px;
     margin-bottom: 100px;
+
+    @media screen and (min-width: $desktop) {
+        flex-wrap: nowrap;
+    }
 }
 
 .why__quality li {

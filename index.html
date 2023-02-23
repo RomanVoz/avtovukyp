@@ -18,12 +18,23 @@
     <div class="container">
         <div class="header__body">
             <a class="header__logo" href="#">
-                <img src="./img/Logo/logo.png" alt="Лого">
+                <picture>
+                    <img 
+                    srcset="
+                    ./img/Logo/logoL.png 175w, 
+                    ./img/Logo/logoM.png 175w, 
+                    ./img/Logo/logoS.png 132w"
+
+                    sizes=" (min-width: 1200px) 175px, (min-width: 768px) 175px, (min-width: 320px) 132px,"
+                    src="./img/Logo/logoL.png" 
+                    alt="logo" 
+                    >
+                </picture>
             </a>
             <div class="header__burger">
                 <span></span>
             </div>
-            <nav class="header__menu">
+            <!-- <nav class="header__menu">
                 <ul class="header__list">
                     <li>
                         <a class="header__link" href="#">О нас</a>
@@ -38,13 +49,11 @@
                         <a class="header__link" href="#">Статьи</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
             <a class="header__contact" href="tel:+380959855525">095-985-55-25</a>
         </div>
     </div>
 </header>
-<body>
-
 <!-- HERO -->
     <section class="hero">
         <div class="container">
@@ -138,134 +147,134 @@
     </section> -->
 
 <!-- STEPS -->
-    <section>
-        <div class="container">
-            <h2 class="steps__title">Этапы выкупа автомобилей</h2>
-            <div class="title__bullet">
-                    <svg class="icon-bullet" width="19" height="12">
-                    <use href="./img/icons.svg#icon-bullet"></use>
-                    </svg>
-                <p class="steps__text">от звонка до денежного перевода</p>
-            </div>
-            <div class="steps__body">
-                <ul class="speps__list">
-                    <li>
-                        <svg class="steps__icon" width="120" height="120">
-                        <use href="./img/icons.svg#icon-document2"></use>
-                        </svg>
-                        <p class="steps__icon-text" >Заявка для оценки авто</p>
-                    </li>
-                    <li>
-                        <svg class="steps__icon" width="120" height="120">
-                        <use href="./img/icons.svg#icon-telephone"></use>
-                        </svg>
-                        <p class="steps__icon-text" >Звонок автоэксперта</p>
-                    </li>
-                    <li>
-                        <svg class="steps__icon" width="120" height="120">
-                        <use href="./img/icons.svg#icon-deal"></use>
-                        </svg>
-                        <p class="steps__icon-text">Осмотр вашего авто</p>
-                    </li>
-                    <li>
-                        <svg class="steps__icon" width="120" height="120">
-                        <use href="./img/icons.svg#icon-document"></use>
-                        </svg>
-                        <p class="steps__icon-text" >Заключение договора</p>
-                    </li>
-                    <li>
-                        <svg class="steps__icon" width="120" height="120">
-                        <use href="./img/icons.svg#icon-card"></use>
-                        </svg>
-                        <p class="steps__icon-text" >Оплата на банковский счет</p>
-                    </li>
-                </ul>
-            </div>
+   <section>
+    <div class="container">
+        <h2 class="steps__title">Этапы выкупа автомобилей</h2>
+        <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+            <p class="steps__text">от звонка до денежного перевода</p>
         </div>
-    </section>
+        <div class="steps__body">
+            <ul class="speps__list">
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-document2"></use>
+                    </svg>
+                    <p class="steps__icon-text" >Заявка для оценки авто</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-telephone"></use>
+                    </svg>
+                    <p class="steps__icon-text" >Звонок автоэксперта</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-deal"></use>
+                    </svg>
+                    <p class="steps__icon-text">Осмотр вашего авто</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-document"></use>
+                    </svg>
+                    <p class="steps__icon-text" >Заключение договора</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-card"></use>
+                    </svg>
+                    <p class="steps__icon-text" >Оплата на банковский счет</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
     <!-- FORM AVTO -->
     <section class="section__fon">
-        <div class="container">
-            <div class="form__avto">
-                <form class="form__avto-body">
-                    <span class="form__avto-text">Узнай стоимость своего авто</span>
-                    <label>
-                        <input 
-                        class="form__avto-name"
-                        type="name"
-                        placeholder="Ваше имя">
-                    </label>
-                    <label>
-                        <input 
-                        class="form__avto-name"
-                        type="phone"
-                        placeholder="Номер телефона">
-                    </label>
-                    <label>
-                        <input 
-                        class="form__avto-name"
-                        type="avto"
-                        placeholder="Марка авто">
-                    </label>
-                    <button class="form__avto-bt" type="button">Расчитать стоимость
-                    </button>
-                </form>
-            </div>
+    <div class="container">
+        <div class="form__avto">
+            <form class="form__avto-body">
+                <span class="form__avto-text">Узнай стоимость своего авто</span>
+                <label>
+                    <input 
+                    class="form__avto-name"
+                    type="name"
+                    placeholder="Ваше имя">
+                </label>
+                <label>
+                    <input 
+                    class="form__avto-name"
+                    type="phone"
+                    placeholder="Номер телефона">
+                </label>
+                <label>
+                    <input 
+                    class="form__avto-name"
+                    type="avto"
+                    placeholder="Марка авто">
+                </label>
+                <button class="form__avto-bt" type="button">Расчитать стоимость
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- WHY US -->
     <section>
-        <div class="container">
-            <div class="why__avto">
-                    <h2 class="steps__title">Почему именно Автовыкуп-Prosto?</h2>
+    <div class="container">
+        <div class="why__avto">
+                <h2 class="steps__title">Почему именно Автовыкуп-Prosto?</h2>
                 <div class="title__bullet">
                     <svg class="icon-bullet" width="19" height="12">
                     <use href="./img/icons.svg#icon-bullet"></use>
                     </svg>
                     <p class="steps__text">как мы завоевываем доверие клиентов</p>
                 </div>
-                        <svg class="icon-15" width="290" height="250">
+            <div class="why__for-us-body">
+                <h3 class="why__for-us">Про нас</h3>
+                <p class="why__text">
+                    Наша специализация- выкуп автомобилей по Киеву. За годы практики мы 
+                    отточили процесс выкупа до идеала, что позволяет нам занять лидирующие 
+                    позиции на рынке.</p>
+                    
+                <p class="why__text"> Мы лояльно относимся клиентам,  именно по этой причине предусмотрен 
+                    выезд оценщика бесплатно в день заявки. Так же возможна оценка по фото, 
+                    видео или в режиме видеозвонка.</p>
+                    
+                <p class="why__text"> Если вам необходим быстрый выкуп автомобиля с оформлением в соответсвии 
+                    с законодательством- ждем вашего звонка. </p>
+                
+                <p>Просто. Быстро и надежно.</p>
+                        <svg class="icon-15" width="166" height="145">
                         <use href="./img/icons.svg#15"></use>
                         </svg>
                 <img class="why__img" src="./img/avto.png" alt="авто">
-                <div class="why__for-us-body">
-                    <h3 class="why__for-us">Про нас</h3>
-                    <p class="why__text">
-                        Наша специализация- выкуп автомобилей по Киеву. За годы практики мы 
-                        отточили процесс выкупа до идеала, что позволяет нам занять лидирующие 
-                        позиции на рынке.</p>
-                        
-                    <p class="why__text"> Мы лояльно относимся клиентам,  именно по этой причине предусмотрен 
-                        выезд оценщика бесплатно в день заявки. Так же возможна оценка по фото, 
-                        видео или в режиме видеозвонка.</p>
-                        
-                    <p class="why__text"> Если вам необходим быстрый выкуп автомобиля с оформлением в соответсвии 
-                        с законодательством- ждем вашего звонка. </p>
-                    
-                    <p>Просто. Быстро и надежно.</p>
-                </div>
-                <ul class="why__quality">
-                    <li>
-                        <p class="quality__title">Быстрее некуда</p>
-                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
-                    </li>
-                    <li>
-                        <p class="quality__title">Быстрее некуда</p>
-                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
-                    </li>
-                    <li>
-                        <p class="quality__title">Адекватная оценка</p>
-                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
-                    </li>
-                    <li>
-                        <p class="quality__title">Вывоз автомобиля</p>
-                        <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
-                    </li>
-                </ul>
             </div>
-    </section>
+            <ul class="why__quality">
+                <li>
+                    <p class="quality__title">Быстрее некуда</p>
+                    <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                </li>
+                <li>
+                    <p class="quality__title">Быстрее некуда</p>
+                    <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                </li>
+                <li>
+                    <p class="quality__title">Адекватная оценка</p>
+                    <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                </li>
+                <li>
+                    <p class="quality__title">Вывоз автомобиля</p>
+                    <p class="why__text">Наших клиентов впечетляет оперативность и слаженность работы нашей команды. Средняя время сделки- 2 дня.</p>
+                </li>
+            </ul>
+        </div>
+</section>
 
     <!-- CREDIT AVTO -->
     <section class="credit section__fon">
@@ -278,6 +287,9 @@
                 <p class="steps__text">для нас это не проблема</p>
             </div>
                 <div class="credit__body">
+                    <img class="credit__many" src="./img/credit/many.png" alt="деньги">
+                    <img class="credit__lock" src="./img/credit/lock.png" alt="замок">
+                    <img class="credit__avto" src="./img/credit/avto.png" alt="авто">
                     <ul class="credit__list">
                         <li>
                             <svg class="" width="30" height="30">
@@ -304,9 +316,7 @@
                             <p class="credit__text">Выкуп  лизинговых авто</p>
                         </li>
                     </ul>
-                    <img class="credit__many" src="./img/credit/many.png" alt="деньги">
-                    <img class="credit__lock" src="./img/credit/lock.png" alt="замок">
-                    <img class="credit__avto" src="./img/credit/avto.png" alt="авто">
+                    
                 </div>
         </div>
     </section>
@@ -345,7 +355,41 @@
                 </svg>
                 <p class="steps__text">что о нас говорят?</p>
             </div>
-        <ul class="reviews__list">
+           <div class="slider ">
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Дмитрий Назаренко</p>
+                    <p class="reviews__text">Современный автовыкуп.
+                        Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
+                        Рекомендую!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Дмитрий Назаренко</p>
+                    <p class="reviews__text">Современный автовыкуп.
+                        Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
+                        Рекомендую!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Дмитрий Назаренко</p>
+                    <p class="reviews__text">Современный автовыкуп.
+                        Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
+                        Рекомендую!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Дмитрий Назаренко</p>
+                    <p class="reviews__text">Современный автовыкуп.
+                        Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
+                        Рекомендую!</p>
+                </div>
+            </div>
+           </div>
+        <!-- <ul class="reviews__list">
             <li>
                 <p class="reviews__name">Дмитрий Назаренко</p>
                 <p class="reviews__text">Современный автовыкуп.
@@ -364,7 +408,7 @@
                     Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
                     Рекомендую!</p>
             </li>
-        </ul>
+        </ul> -->
     </div>
     </section>
 <!-- QUESTIONS -->
@@ -488,7 +532,7 @@
                 <p>autovykuprosto@gmail.com</p>
                 <p>+38 (095)-985-5525</p>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7202.41058549971!2d30.54855980954683!3d50.339760057480966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7ac0cc7a335%3A0x5a752fb393c8e37e!2z0YPQuy4g0J_QtdGA0LXQtNC-0LLQsNGPLCAyMSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sus!4v1675425812069!5m2!1sru!2sus" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7202.41058549971!2d30.54855980954683!3d50.339760057480966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7ac0cc7a335%3A0x5a752fb393c8e37e!2z0YPQuy4g0J_QtdGA0LXQtNC-0LLQsNGPLCAyMSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sus!4v1675425812069!5m2!1sru!2sus" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
             <p class="copyright">Быстро, просто, надежно.  ⒸАвтовыкуп-Prosto</p>
                 <div class="footer__navigation">
                     <div>
@@ -533,6 +577,9 @@
                 </div>
         </div>
     </footer>
+
+
+
     <script
     defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -541,5 +588,8 @@
   >
 </script>
   <script defer src="./js/mobile-menu.js"></script>
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </body>
 </html>
