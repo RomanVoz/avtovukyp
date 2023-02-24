@@ -784,7 +784,7 @@ details > summary {
 }
 
 .questions__faq {
-  min-width: 440px;
+  min-width: 320px;
   margin-bottom: 30px;
   border-bottom: 2px solid #EDEDED;
 }
@@ -858,7 +858,7 @@ details > summary {
           align-items: center;
   padding: 15px 20px;
   margin-top: 24px;
-  min-width: 360px;
+  min-width: 280px;
   height: 48px;
   background: #F4F6FA;
   border: 1px solid #B8BABE;
@@ -872,7 +872,7 @@ details > summary {
 
 .questions__form-bt {
   margin-top: 24px;
-  min-width: 360px;
+  min-width: 280px;
   min-height: 50px;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -941,7 +941,17 @@ details > summary {
 }
 
 .map {
-  max-width: 480px;
+  max-width: 320px;
+}
+@media screen and (min-width: 767px) {
+  .map {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .map {
+    max-width: 1300px;
+  }
 }
 
 .place-card {
