@@ -427,19 +427,13 @@ details > summary {
           justify-content: center;
   padding-top: 30px;
   margin-bottom: 20px;
-  width: 400px;
+  max-width: 400px;
   font-family: var(--second-font);
   font-size: 30px;
   line-height: 125%;
   text-transform: uppercase;
   color: var(--color-title-first);
 }
-@media screen and (min-width: 767px) {
-  .form__avto-text {
-    width: auto;
-  }
-}
-
 .form__avto-name {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
