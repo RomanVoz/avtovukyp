@@ -774,12 +774,18 @@ details > summary {
 }
 
 .faq__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .faq__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .faq__form {
+  display: block;
   min-width: 320px;
   margin-bottom: 100px;
   height: 420px;
@@ -804,6 +810,13 @@ details > summary {
   }
 }
 
+@media screen and (min-width: 767px) {
+  .faq__form__input {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
 .faq__form-name {
   font-family: "Jost";
   font-size: 18px;
@@ -822,7 +835,13 @@ details > summary {
 }
 @media screen and (min-width: 767px) {
   .faq__form-name {
+    min-width: 400px;
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .faq__form-name {
+    min-width: 280px;
   }
 }
 
@@ -849,11 +868,19 @@ details > summary {
 }
 
 .accordion {
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  min-width: 320px;
+  margin-bottom: 30px;
   border-bottom: 2px solid #EDEDED;
-  width: 640px;
+}
+@media screen and (min-width: 767px) {
+  .accordion {
+    width: 730px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .accordion {
+    max-width: 640px;
+  }
 }
 
 .accordion__question p {
@@ -903,6 +930,8 @@ details > summary {
   border: 1px solid #000000;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
 
 .accordion__question span:before {
@@ -913,6 +942,8 @@ details > summary {
 .accordion.active .accordion__question span:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
 
 .accordion.active .accordion__question span::after {
