@@ -17,8 +17,12 @@
 }
 
 .why__img {
-    // position: absolute;
-    // top: 10px;
+    margin-top: 40px;
+
+    @media screen and (min-width: $tablet) {
+       margin-top: 0;
+    }
+
     @media screen and (min-width: $desktop) {
         position: absolute;
         top: 0;
@@ -51,11 +55,13 @@
 .why__quality {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 115px;
+    margin-top: 40px;
     gap: 20px;
     margin-bottom: 100px;
+    padding: 0;
 
     @media screen and (min-width: $desktop) {
+        margin-top: 115px;
         flex-wrap: nowrap;
     }
 }

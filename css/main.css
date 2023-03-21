@@ -379,6 +379,7 @@ details > summary {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0;
 }
 @media screen and (min-width: 1200px) {
   .speps__list {
@@ -390,7 +391,7 @@ details > summary {
 .speps__list li {
   width: 150px;
   height: 160px;
-  padding-bottom: 0px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 1200px) {
   .speps__list li {
@@ -398,9 +399,6 @@ details > summary {
   }
 }
 
-.speps__list li:not(:last-child) {
-  margin-right: 50px;
-}
 @media screen and (min-width: 1200px) {
   .speps__list li:not(:last-child) {
     margin-right: 140px;
@@ -533,6 +531,14 @@ details > summary {
   }
 }
 
+.why__img {
+  margin-top: 40px;
+}
+@media screen and (min-width: 767px) {
+  .why__img {
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .why__img {
     position: absolute;
@@ -567,12 +573,14 @@ details > summary {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 115px;
+  margin-top: 40px;
   gap: 20px;
   margin-bottom: 100px;
+  padding: 0;
 }
 @media screen and (min-width: 1200px) {
   .why__quality {
+    margin-top: 115px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -674,6 +682,7 @@ details > summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
   padding-bottom: 100px;
 }
 @media screen and (min-width: 1200px) {
