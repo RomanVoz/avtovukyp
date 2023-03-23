@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Автовыкуп просто</title>
+</head>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <a class="header__logo" href="#">
+                <picture>
+                    <img 
+                    srcset="
+                    ./img/Logo/logoL.png 175w, 
+                    ./img/Logo/logoM.png 175w, 
+                    ./img/Logo/logoS.png 132w"
+
+                    sizes=" (min-width: 1200px) 175px, (min-width: 768px) 175px, (min-width: 320px) 132px,"
+                    src="./img/Logo/logoL.png" 
+                    alt="logo" 
+                    >
+                </picture>
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <!-- <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a class="header__link" href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="header__link" href="#">Статьи</a>
+                    </li>
+                </ul>
+            </nav> -->
+            <a class="header__contact" href="tel:+380959855525">095-985-55-25</a>
+        </div>
+    </div>
+</header>
+
+<!-- SUCCESS -->
+<section class="container">
+    <div class="success">
+        <img class="success__img" src="/img/success.png" alt="Успешно">
+        <div class="success__text1">
+            <p class="success__text">Заявка успешно отправлена!</p>
+            <p class="success__text2">Мы свяжемся с вами в ближайшее время</p>
+        </div>
+    </div>
+
+</section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contacts">
+                <h2>Наши контакты</h2>
+                <p>Киев, улица Петлюры 32</p>
+                <p>autovykuprosto@gmail.com</p>
+                <p>+38 (095)-985-5525</p>
+            </div>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7202.41058549971!2d30.54855980954683!3d50.339760057480966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7ac0cc7a335%3A0x5a752fb393c8e37e!2z0YPQuy4g0J_QtdGA0LXQtNC-0LLQsNGPLCAyMSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sus!4v1675425812069!5m2!1sru!2sus" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+            <p class="copyright">Быстро, просто, надежно.  ⒸАвтовыкуп-Prosto</p>
+                <div class="footer__navigation">
+                    <div>
+                        <img class="footer__logo" src="./img/Logo/logo-footer.png" alt="лого">
+                        <span class="footer__logo-text">Быстро. Просто. Надежно.</span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Расчет стоимости</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Документы</a>
+                        </li>
+                        <li>
+                            <a href="#">Отзывы</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Выкуп после ДТП</a>
+                        </li>
+                        <li>
+                            <a href="#">Выкуп
+                                кредитных авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Срочный выкуп</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </footer>
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+>
+</script>
+<script defer src="./js/mobile-menu.js"></script>
+<script defer src="./js/button.js"></script>
+<script defer src="./js/script.js"></script>
+<script defer src="./js/faq.js"></script>
+<script defer src="./js/slick.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+</body>
+</html>
