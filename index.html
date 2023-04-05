@@ -14,7 +14,56 @@
 </head>
 
 <!-- HEADER -->
+
 <header class="header">
+    <div class="header__container">
+        <a class="header__logo" href="#">
+            <picture>
+                <img 
+                srcset="
+                ./img/Logo/logoL.png 175w, 
+                ./img/Logo/logoM.png 175w, 
+                ./img/Logo/logoS.png 132w"
+
+                sizes=" (min-width: 1200px) 175px, (min-width: 768px) 175px, (min-width: 320px) 132px,"
+                src="./img/Logo/logoL.png" 
+                alt="logo" 
+                >
+            </picture>
+        </a>
+
+        <div class="header__menu menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li> 
+                        <a href="" class="menu__link"> О нас</a>
+                    </li>
+                    <li> 
+                        <a href="" class="menu__link">Контакты</a>
+                    </li>
+                    <li> 
+                        <a href="" class="menu__link">Услуги</a>
+                        <ul>
+                            <li> <a href="" class="menu__sub-link"> Выкуп авто после ДТП</a></li>
+                        </ul>
+                        <ul>
+                            <li> <a href="" class="menu__sub-link"> Срочный выкуп авто</a></li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <a href="" class="menu__link">Статьи</a>
+                    </li>
+                </ul>
+                <a class="header__contact" href="tel:+380685990990">068-599-09-90</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- <header class="header">
     <div class="container">
         <div class="header__body">
             <a class="header__logo" href="#">
@@ -34,7 +83,7 @@
             <div class="header__burger">
                 <span></span>
             </div>
-            <!-- <nav class="header__menu">
+            <nav class="header__menu">
                 <ul class="header__list">
                     <li>
                         <a class="header__link" href="#">О нас</a>
@@ -49,11 +98,11 @@
                         <a class="header__link" href="#">Статьи</a>
                     </li>
                 </ul>
-            </nav> -->
+            </nav>
             <a class="header__contact" href="tel:+380959855525">095-985-55-25</a>
         </div>
     </div>
-</header>
+</header> -->
 <!-- HERO -->
     <section class="hero">
         <div class="container">
@@ -197,31 +246,35 @@
     <section class="section__fon">
     <div class="container">
         <div class="form__avto">
-            <form class="form__avto-body">
+            <form id="avto-form" class="form__avto-body">
                 <span class="form__avto-text">Дізнайся вартість свого авто</span>
-                <label>
-                    <input 
-                    class="form__avto-name"
-                    type="name"
-                    placeholder="Ваше им'я">
-                </label>
-                <label>
-                    <input 
-                    class="form__avto-name"
-                    type="phone"
-                    placeholder="Номер телефону">
-                </label>
-                <label>
-                    <input 
-                    class="form__avto-name"
-                    type="avto"
-                    placeholder="Марка авто">
-                </label>
-                <button class="form__avto-bt" type="button">Розрахувати вартість
-                </button>
+                        <label for="name"></label>
+                        <input 
+                        class="form__avto-name" 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Ваше им'я" required>
+                        <label for="phone"></label>
+                        <input 
+                        class="form__avto-name" 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Номер телефону" required>
+                        <label for="car"></label>
+                        <input 
+                        class="form__avto-name" 
+                        type="text" 
+                        id="car" 
+                        name="car"
+                        placeholder="Марка авто" required>
+                    <button id="submit-btn" class="form__avto-bt" type="submit">Отправить</button>
             </form>
         </div>
     </div>
+    
+    
 </section>
 
     <!-- WHY US -->
@@ -510,31 +563,21 @@
                 </div>
             </div>
     </div>
-                <form class="faq__form">
-                    <span class="questions__form-text">Остались еще вопросы?</span>
-                    <div class="faq__form__input">
-                      <label>
-                          <input 
-                          class="faq__form-name"
-                          type="name"
-                          placeholder="Ваше имя">
-                      </label>
-                      <label>
-                          <input 
-                          class="faq__form-name"
-                          type="phone"
-                          placeholder="Номер телефона">
-                      </label>
-                      <label>
-                          <input 
-                          class="faq__form-name"
-                          type="avto"
-                          placeholder="Марка авто">
-                      </label>
-                      <button class="faq__form-bt" type="button">Получить консультацию
-                      </button>
-                    </div>
-                </form>
+    <form class="faq__form" id="faq-form">
+        <span class="questions__form-text">Остались еще вопросы?</span>
+        <div class="faq__form__input">
+          <label>
+            <input class="faq__form-name" type="text" id="name" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label>
+            <input class="faq__form-name" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+          </label>
+          <label>
+            <input class="faq__form-name" type="text" id="car" name="car" placeholder="Марка авто" required>
+          </label>
+          <button id="submit-btn" type="submit" class="faq__form-bt">Получить консультацию</button>
+        </div>
+      </form>
             </div>
         </div>
     </div>

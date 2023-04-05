@@ -6,6 +6,16 @@
     z-index: 50;
 }
 
+.header__container {
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
 .header:before {
     content: '';
     position: absolute;
@@ -39,16 +49,28 @@
     
 }
 
-.header__list {
-    display: flex;
+.menu__list {
 
+    @media (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.menu__link li {
+    position: relative;
+    margin: 0 0 0 20px;
+
+    @media (min-width: $tablet) {
+        padding: 10px 0;
+    }
 }
 
 .header__list li {
     margin-left: 60px;
 }
 
-.header__link {
+.menu__link {
     font-family: var(--general-font);
     font-size: 20px;
     line-height: 115%;
