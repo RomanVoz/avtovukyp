@@ -71,14 +71,14 @@
     position: relative;
     margin: 0;
     padding: 0;
-    max-width: 440px;
+    // max-width: 440px;
     max-height: 150px;
     margin-bottom: 40px;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
         
-        max-width: 690px;
+        // max-width: 690px;
         max-height: 300px;
         top: -15%;
         left: 45%;
