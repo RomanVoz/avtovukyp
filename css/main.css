@@ -711,7 +711,7 @@ details > summary {
 @media screen and (min-width: 767px) {
   .credit__avto {
     position: absolute;
-    max-width: 890px;
+    max-width: 690px;
     max-height: 300px;
     top: -15%;
     left: 45%;
