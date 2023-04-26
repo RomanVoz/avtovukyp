@@ -15,50 +15,43 @@
 </head>
 
 
-<section class="section__fon">
-    <div class="container">
-        <h2 class="steps__title" >Отзывы клиентов </h2>
-        <div class="title__bullet">
-            <svg class="icon-bullet" width="19" height="12">
-            <use href="./img/icons.svg#icon-bullet"></use>
-            </svg>
-            <p class="steps__text">что о нас говорят?</p>
-        </div>
-       <div class="slider ">
-        <div class="slider__item reviews__list">
-            <div class="">
-                <p class="reviews__name">Дмитрий Назаренко</p>
-                <p class="reviews__text">Современный автовыкуп.
-                    Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
-                    Рекомендую!</p>
-            </div>
-        </div>
-        <div class="slider__item reviews__list">
-            <div class="">
-                <p class="reviews__name">Дмитрий Назаренко</p>
-                <p class="reviews__text">Современный автовыкуп.
-                    Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
-                    Рекомендую!</p>
-            </div>
-        </div>
-        <div class="slider__item reviews__list">
-            <div class="">
-                <p class="reviews__name">Дмитрий Назаренко</p>
-                <p class="reviews__text">Современный автовыкуп.
-                    Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
-                    Рекомендую!</p>
-            </div>
-        </div>
-        <div class="slider__item reviews__list">
-            <div class="">
-                <p class="reviews__name">Дмитрий Назаренко</p>
-                <p class="reviews__text">Современный автовыкуп.
-                    Сделка прошла удивительно быстро, не думал смогу продать машину после ДТП. Просто и без лишней траты нервов.
-                    Рекомендую!</p>
-            </div>
-        </div>
-       </div>
+<head>
+    <title>Google Map</title>
+    <style>
+      /* Стиль для контейнера карты */
+      #map-container {
+        height: 400px; /* Задайте высоту карты */
+        width: 100%; /* Задайте ширину карты */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Контейнер для карты -->
+    <div id="map-container"></div>
   
+    <!-- Скрипт Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=ВАШ_КЛЮЧ_АПИ&callback=initMap" async defer></script>
+    <script>
+      // Функция инициализации карты
+      function initMap() {
+        // Координаты центра карты
+        var mapCenter = {lat: 50.452699, lng: 30.614797}; // Координаты "улицы Передовая 19" в Киеве
+  
+        // Создание карты
+        var map = new google.maps.Map(document.getElementById('map-container'), {
+          center: mapCenter,
+          zoom: 17 // Задайте уровень масштабирования карты
+        });
+  
+        // Создание маркера на карте
+        var marker = new google.maps.Marker({
+          position: mapCenter,
+          map: map,
+          title: 'улица Передовая 19' // Задайте заголовок маркера
+        });
+      }
+    </script>
+  </body>
 
     <script
     defer

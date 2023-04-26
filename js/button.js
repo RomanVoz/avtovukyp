@@ -58,7 +58,7 @@ document.getElementById('avto-form').addEventListener('submit', function(e) {
         // Handle success
         console.log(response);
         // Redirect to Google.com
-        window.location.href = 'https://www.google.com/';
+        window.location.href = 'http://127.0.0.1:5500/success.html';
     })
     .catch(function(error) {
         // Handle error
@@ -84,7 +84,7 @@ document.getElementById('faq-form').addEventListener('submit', function(e) {
         // Handle success
         console.log(response);
         // Redirect to Google.com
-        window.location.href = 'https://www.google.com/';
+        window.location.href = 'http://127.0.0.1:5500/success.html';
     })
     .catch(function(error) {
         // Handle error
