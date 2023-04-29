@@ -627,6 +627,10 @@ details > summary {
   color: var(--text-color-general);
 }
 
+.credit {
+  overflow: hidden;
+}
+
 .credit__body {
   position: relative;
 }
@@ -704,13 +708,15 @@ details > summary {
   position: relative;
   margin: 0;
   padding: 0;
-  max-height: 150px;
+  max-width: 440px;
+  height: auto;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 767px) {
   .credit__avto {
     position: absolute;
-    max-height: 300px;
+    max-width: 690px;
+    height: auto;
     top: -15%;
     left: 45%;
   }
@@ -1106,15 +1112,23 @@ details > summary {
 }
 
 /* Стрелка влево */
-.slick-arrow.slick-prev {
-  left: -5%;
-  background: url("../img/icons.svg#arrow-left") 0 0 no-repeat;
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  border: 0;
+  outline: 0;
+  background: url("../img/next.svg") 0 0 no-repeat;
+  background-size: contain;
 }
 
 /* Стрелка вправо */
+.slick-arrow.slick-prev {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  left: -5%;
+}
+
 .slick-arrow.slick-next {
   right: -5%;
-  background: url("../img/next.svg") 0 0 no-repeat;
 }
 
 /* Стрелка не активная */

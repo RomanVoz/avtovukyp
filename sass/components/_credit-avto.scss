@@ -1,3 +1,7 @@
+.credit {
+    overflow: hidden;
+}
+
 .credit__body {
     position: relative;
 }
@@ -71,15 +75,15 @@
     position: relative;
     margin: 0;
     padding: 0;
-    // max-width: 440px;
-    max-height: 150px;
+    max-width: 440px;
+    height: auto;
     margin-bottom: 40px;
 
     @media screen and (min-width: $tablet) {
         position: absolute;
         
-        // max-width: 690px;
-        max-height: 300px;
+        max-width: 690px;
+        height: auto;
         top: -15%;
         left: 45%;
     }
