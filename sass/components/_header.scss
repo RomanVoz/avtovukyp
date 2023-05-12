@@ -26,6 +26,7 @@
     
     background-color: #b8babe;
     opacity: 50%;
+    z-index: -1;
 }
 
 .header__body {
@@ -38,7 +39,7 @@
 }
 
 .header__logo {
-
+    z-index: 2;
 }
 
 .header__burger {
@@ -82,5 +83,104 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 115%;
-    color: var(--header-color-text);
+    color: #FFFFFF;
+    z-index: 2;
 }
+
+//...........
+
+// .header {
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     z-index: 1000;
+// }
+
+// .header::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 3;
+//     // background-color: #EDEDED;
+// }
+
+// .header__burger {
+//     display: block;
+//     position: relative;
+//     width: 30px;
+//     height: 20px;
+    
+//     left: 0;
+
+//     @media screen and (min-width: $tablet) {
+//         display: none;
+//     }
+
+//     @media screen and (min-width: $desktop) {
+//     }
+// }
+
+// .header__burger::before,
+// .header__burger::after {
+//     content: '';
+//     background-color: black;
+//     position: absolute;
+//     width: 100%;
+//     height: 2px;
+//     z-index: 3;
+// }
+
+// .header__burger::after {
+//     top: 0;
+// }
+
+// .header__burger::before {
+//     bottom: 0;
+// }
+
+// .header__burger span {
+//     background-color: black;
+//     position: absolute;
+//     width: 100%;
+//     height: 2px;
+//     top: 9px;
+// }
+
+// .header__logo {
+//     z-index: 3;
+// }
+
+// .header__logo img {
+//     max-width: 100%;
+//     display: block;
+// }
+
+// .header__body {
+//     position: relative;
+//     z-index: 2;
+//     display: flex;
+//     justify-content: space-between;
+//     height: 100px;
+//     align-items: center;
+// }
+
+// .header__list {
+//     display: flex;
+// }
+
+// .header__menu {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #E7EEF0;
+// }
+
+// .header__list li {
+//     margin: 0 0 0 20px;
+// }

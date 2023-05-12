@@ -16,20 +16,10 @@
 <header class="header">
     <div class="header__container container">
         <a class="header__logo" href="#">
-            <picture>
-                <img 
-                srcset="
-                ./img/Logo/logoL.png 175w, 
-                ./img/Logo/logoM.png 175w, 
-                ./img/Logo/logoS.png 132w"
-
-                sizes=" (min-width: 1200px) 175px, (min-width: 768px) 175px, (min-width: 320px) 132px,"
+                <img loading ="lazy" class="lazy"
                 src="./img/Logo/logoL.png" 
-                alt="logo" 
-                >
-            </picture>
+                alt="logo" >
         </a>
-
         <div class="header__menu menu">
             <div class="menu__icon">
                 <span></span>
@@ -270,7 +260,7 @@
                         <svg class="icon-15" width="166" height="145">
                         <use href="./img/icons.svg#15"></use>
                         </svg>
-                <img class="why__img" src="./img/avto.png" alt="авто">
+                <img loading ="lazy" class="why__img" src="./img/avto.png" alt="авто">
             </div>
             <ul class="why__quality">
                 <li>
@@ -304,9 +294,9 @@
                 <p class="steps__text">для нас це не проблема</p>
             </div>
                 <div class="credit__body">
-                    <img class="credit__many" src="./img/credit/many.png" alt="деньги">
-                    <img class="credit__lock" src="./img/credit/lock.png" alt="замок">
-                    <img class="credit__avto" src="./img/credit/avto.png" alt="авто">
+                    <img loading ="lazy" class="credit__many" src="./img/credit/many.png" alt="деньги">
+                    <img loading ="lazy" class="credit__lock" src="./img/credit/lock.png" alt="замок">
+                    <img loading ="lazy" class="credit__avto" src="./img/credit/avto.png" alt="авто">
                     <ul class="credit__list">
                         <li>
                             <svg class="" width="30" height="30">
@@ -526,6 +516,7 @@
   </section>
     <!-- FOOTER -->
     <footer class="footer">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7202.41058549971!2d30.54855980954683!3d50.339760057480966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7ac0cc7a335%3A0x5a752fb393c8e37e!2z0YPQuy4g0J_QtdGA0LXQtNC-0LLQsNGPLCAyMSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sus!4v1675425812069!5m2!1sru!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="container">
             <div class="footer__contacts">
                 <h2>Наші контакти</h2>
@@ -533,11 +524,10 @@
                 <!-- <p>autovykuprosto@gmail.com</p> -->
                 <p>+38 (068)-599-09-90</p>
             </div>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7202.41058549971!2d30.54855980954683!3d50.339760057480966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7ac0cc7a335%3A0x5a752fb393c8e37e!2z0YPQuy4g0J_QtdGA0LXQtNC-0LLQsNGPLCAyMSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sus!4v1675425812069!5m2!1sru!2sus" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
             <p class="copyright">Швидко, просто, надійно.  ⒸАвтовикуп-Просто</p>
                 <div class="footer__navigation">
                     <div>
-                        <img class="footer__logo" src="./img/Logo/logo-footer.png" alt="лого">
+                        <img loading ="lazy" class="footer__logo" src="./img/Logo/logo-footer.png" alt="лого">
                         <span class="footer__logo-text">Швидко, просто, надійно.</span>
                     </div>
                     <ul class="footer__list">
@@ -592,5 +582,14 @@
   <script defer src="./js/slick.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2SZVREB4XZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2SZVREB4XZ');
+</script>
 </body>
 </html>
