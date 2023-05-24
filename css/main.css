@@ -200,6 +200,8 @@ details > summary {
 
 .header__contact {
   display: block;
+  position: relative;
+  z-index: 5;
 }
 
 .text__telegram {
@@ -219,10 +221,21 @@ details > summary {
   margin-left: 10px;
 }
 
+.header__contact--first {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .header__logo--white.active {
     -webkit-filter: invert(0);
             filter: invert(0);
+  }
+  .header__contact--first {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 10px;
   }
   body.lock {
     overflow: hidden;
@@ -648,16 +661,6 @@ details > summary {
 
 .form__avto-bt {
   margin-left: 20px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 15px 30px;
   gap: 10px;
   max-width: 310px;

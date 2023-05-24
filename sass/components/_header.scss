@@ -239,6 +239,8 @@
 
 .header__contact {
     display: block;
+    position: relative;
+    z-index: 5;
 }
 
 .text__telegram {
@@ -254,9 +256,21 @@
     margin-left: 10px;
 }
 
+.header__contact--first {
+    display: none;
+}
+
 @media screen and (max-width: $tablet) {
     .header__logo--white.active {
         filter: invert(0);
+    }
+
+    .header__contact--first {
+        display: block;
+        position: absolute;
+        z-index: 5;
+        left: 50%;
+        top: 10px;
     }
 
     body.lock {
