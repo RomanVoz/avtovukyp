@@ -57,7 +57,7 @@ const header = document.querySelector('.header');
 // Обработчик события прокрутки страницы
 window.addEventListener('scroll', function() {
   // Проверяем положение прокрутки страницы
-  if (window.pageYOffset > 1100) {
+  if (window.pageYOffset > 100) {
     // Добавляем класс фона при прокрутке более 300px
     header.classList.add('header--scrolled');
   } else {
