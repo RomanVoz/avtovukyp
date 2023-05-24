@@ -14,7 +14,7 @@
     <title>Автовыкуп просто</title>
 </head>
 <header class="header">
-  <div class="container">
+  <div class="header__container container">
     <div class="header__body">
       <a href="" class="header__logo">
         <img src="./img/Logo/logol.png" alt="">
@@ -41,50 +41,6 @@
     </div>
   </div>
 </header>
-
-
-
-<head>
-	<title>Карта</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Подключаем стили Leaflet -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
-
-	<style>
-		/* Стили для контейнера карты */
-		#mapid {
-			height: 400px;
-			width: 100%;
-		}
-	</style>
-</head>
-<body>
-	<!-- Контейнер для карты -->
-	<div id="mapid"></div>
-
-	<!-- Подключаем скрипты Leaflet -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
-
-	<script>
-		// Создаем карту
-		var mymap = L.map('mapid').setView([50.33864449817387, 30.550659756109287], 17);
-
-		// Добавляем слой OpenStreetMap
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			maxZoom: 19,
-			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-				'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-				'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-			id: 'mapbox.streets'
-		}).addTo(mymap);
-
-		// Создаем маркер
-		var marker = L.marker([50.33864449817387, 30.550659756109287]).addTo(mymap);
-
-		// Задаем заголовок маркера
-		marker.bindPopup("<b>Київ, Передова 19</b>").openPopup();
-	</script>
- 
 </body>
 
     <script
