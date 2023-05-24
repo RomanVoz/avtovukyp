@@ -47,7 +47,21 @@
 
 $(document).ready(function() {
 	$('.header__burger').click(function(event) {
-		$('.header__burger,.header__menu').toggleClass('active');
+		$('.header__burger,.header__menu,.header__logo--white,.header--scrolled').toggleClass('active');
 		$('body').toggleClass('lock');
 	})
 })
+
+const header = document.querySelector('.header');
+
+// Обработчик события прокрутки страницы
+window.addEventListener('scroll', function() {
+  // Проверяем положение прокрутки страницы
+  if (window.pageYOffset > 1100) {
+    // Добавляем класс фона при прокрутке более 300px
+    header.classList.add('header--scrolled');
+  } else {
+    // Удаляем класс фона при прокрутке менее 300px
+    header.classList.remove('header--scrolled');
+  }
+});

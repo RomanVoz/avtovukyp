@@ -87,15 +87,11 @@ details > summary {
   margin: auto;
   padding: 0 20px;
   height: auto;
+  outline: 2px red solid;
 }
 @media screen and (max-width: 320px) {
   .container {
     width: 320px;
-  }
-}
-@media screen and (min-width: 767px) {
-  .container {
-    width: 767px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -120,6 +116,11 @@ details > summary {
   width: 100%;
   height: 100%;
   z-index: 2;
+}
+
+.header--scrolled {
+  background-color: #313131;
+  opacity: 0.9;
 }
 
 .header__container {
@@ -149,6 +150,11 @@ details > summary {
   z-index: 3;
 }
 
+.header__logo--white {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 .header__logo img {
   max-width: 100%;
   display: block;
@@ -167,7 +173,7 @@ details > summary {
   z-index: 2;
 }
 
-.header__list li:not(:last-child) {
+.header__list li {
   margin-right: 60px;
 }
 
@@ -178,7 +184,46 @@ details > summary {
   color: #FFFFFF;
 }
 
+.header__phone {
+  font-family: var(--general-font);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.icon-telegram {
+  fill: #37AEE2;
+  background-color: #fff;
+}
+
+.header__contact {
+  display: block;
+}
+
+.text__telegram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: var(--general-font);
+  font-size: 20px;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+
+.text__telegram svg {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 767px) {
+  .header__logo--white.active {
+    -webkit-filter: invert(0);
+            filter: invert(0);
+  }
   body.lock {
     overflow: hidden;
   }
@@ -205,6 +250,7 @@ details > summary {
     top: 8px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
   }
   .header__burger::before,
   .header__burger::after {
@@ -216,6 +262,7 @@ details > summary {
     left: 0;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
   }
   .header__burger::before {
     top: 0;
@@ -259,13 +306,22 @@ details > summary {
   }
   .header__list {
     display: block;
+    text-align: center;
   }
   .header__list li {
     padding: 15px 15px;
+    margin: 0;
+    margin-bottom: 40px;
   }
   .header__link {
-    font-weight: 500;
+    font-weight: 600;
     color: #000000;
+  }
+  .header--scrolled.active {
+    opacity: 1;
+  }
+  .header__contact {
+    display: none;
   }
 }
 .hero {

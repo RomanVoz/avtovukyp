@@ -163,6 +163,11 @@
     z-index: 2;
 }
 
+.header--scrolled {
+    background-color: #313131;
+    opacity: 0.9;
+  }
+
 .header__container {
     max-width: 1180px;
     margin: 0px auto;
@@ -182,7 +187,10 @@
     height: 30px;
     position: relative;
     z-index: 3;
-    
+}
+
+.header__logo--white {
+    filter: invert(100%);
 }
 
 .header__logo img {
@@ -201,7 +209,7 @@
     z-index: 2; 
 }
 
-.header__list li:not(:last-child) {
+.header__list li {
     margin-right: 60px;
 }
 
@@ -210,9 +218,47 @@
     font-size: 20px;
     line-height: 115%;
     color: #FFFFFF;
+} 
+
+.header__phone {
+    font-family: var(--general-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.header__telegram {
+}
+
+.icon-telegram {
+    fill: #37AEE2;
+    background-color: #fff;
+}
+
+.header__contact {
+    display: block;
+}
+
+.text__telegram {
+    display: flex;
+    align-items: center;
+    font-family: var(--general-font);
+    font-size: 20px;
+    line-height: 115%;
+    color: #FFFFFF;
+}
+
+.text__telegram svg {
+    margin-left: 10px;
 }
 
 @media screen and (max-width: $tablet) {
+    .header__logo--white.active {
+        filter: invert(0);
+    }
+
     body.lock {
         overflow: hidden;
     }
@@ -242,6 +288,7 @@
         height: 4px;
         top: 8px;
         transition: all 0.3s ease 0s;
+        border-radius: 10px;
     }
 
     .header__burger::before,
@@ -253,6 +300,7 @@
         height: 4px;
         left: 0;
         transition: all 0.3s ease 0s;
+        border-radius: 10px;
     }
 
     .header__burger::before {
@@ -300,15 +348,26 @@
 
     .header__list {
         display: block;
+        text-align: center;
     }
 
     .header__list li {
        padding: 15px 15px;
+       margin: 0;
+       margin-bottom: 40px;
     }
     
     .header__link {
-        font-weight: 500;
+        font-weight: 600;
         color: #000000;
+    }
+
+    .header--scrolled.active {
+        opacity: 1;
+    }
+
+    .header__contact {
+        display: none;
     }
 }
 
@@ -317,5 +376,4 @@
 }
 
 
-
-
+  

@@ -8,15 +8,15 @@ $desktop: 1200px;
     padding: 0 20px;
     height: auto;
 
-    // outline: 2px red solid;
+    outline: 2px red solid;
 
     @media screen and (max-width: $mobile) {
     width: $mobile;
     }
 
-    @media screen and (min-width: $tablet) {
-    width: $tablet;
-    }
+    // @media screen and (min-width: $tablet) {
+    // width: $tablet;
+    // }
 
     @media screen and (min-width: $desktop) {
     width: $desktop;
