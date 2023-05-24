@@ -605,12 +605,19 @@ details > summary {
 }
 
 .form__avto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .form__avto-body {
-  text-align: center;
   background-color: #FFFFFF;
   border: 2px solid #503428;
   border-radius: 10px;
@@ -643,46 +650,64 @@ details > summary {
           justify-content: center;
   padding-top: 30px;
   margin-bottom: 20px;
-  max-width: 400px;
+  width: 220px;
   font-family: var(--second-font);
   font-size: 30px;
   line-height: 125%;
   text-transform: uppercase;
   color: var(--color-title-first);
 }
+@media screen and (min-width: 767px) {
+  .form__avto-text {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__avto-text {
+    width: 270px;
+  }
+}
+
 .form__avto-name {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 15px 20px;
   margin-bottom: 12px;
   gap: 10px;
-  max-width: 310px;
+  width: 220px;
   height: auto;
   background: #F4F6FA;
   border: 1px solid #B8BABE;
   border-radius: 10px;
 }
+@media screen and (min-width: 767px) {
+  .form__avto-name {
+    width: 400px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form__avto-name {
-    margin-bottom: 0px;
-    width: 260px;
+    width: 270px;
   }
 }
 
 .form__avto-bt {
-  margin-left: 20px;
   padding: 15px 30px;
   gap: 10px;
-  max-width: 310px;
+  width: 220px;
   height: 53px;
   border: 1px solid #000000;
   border-radius: 10px;
   cursor: pointer;
+}
+@media screen and (min-width: 767px) {
+  .form__avto-bt {
+    margin: 0;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__avto-bt {
+    width: 270px;
+  }
 }
 
 .why__avto {
@@ -987,7 +1012,7 @@ details > summary {
 
 .faq__form {
   display: block;
-  min-width: 320px;
+  min-width: 220px;
   margin-bottom: 100px;
   height: auto;
   -webkit-box-align: center;
@@ -1007,14 +1032,6 @@ details > summary {
 @media screen and (min-width: 1200px) {
   .faq__form {
     margin-left: 130px;
-    min-width: 420px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .faq__form__input {
-    margin-right: 50px;
-    margin-left: 50px;
   }
 }
 
@@ -1028,7 +1045,7 @@ details > summary {
           align-items: center;
   padding: 15px 20px;
   margin-top: 24px;
-  min-width: 280px;
+  min-width: 220px;
   height: 48px;
   background: #F4F6FA;
   border: 1px solid #B8BABE;
@@ -1049,7 +1066,7 @@ details > summary {
 .faq__form-bt {
   cursor: pointer;
   margin-top: 24px;
-  min-width: 280px;
+  min-width: 220px;
   min-height: 50px;
   border: 1px solid #000000;
   border-radius: 10px;
@@ -1062,6 +1079,7 @@ details > summary {
 @media screen and (min-width: 767px) {
   .faq__form-bt {
     font-size: 20px;
+    width: 280px;
   }
 }
 
@@ -1070,18 +1088,13 @@ details > summary {
 }
 
 .accordion {
-  min-width: 320px;
+  min-width: 280px;
   margin-bottom: 30px;
   border-bottom: 2px solid #EDEDED;
 }
-@media screen and (min-width: 767px) {
-  .accordion {
-    width: 730px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .accordion {
-    max-width: 640px;
+    width: 640px;
   }
 }
 
@@ -1168,7 +1181,7 @@ details > summary {
 @media screen and (min-width: 1200px) {
   .footer__contacts {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 30%;
     -webkit-transform: translate(-70%, -100%);
             transform: translate(-70%, -100%);

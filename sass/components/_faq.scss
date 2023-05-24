@@ -1,50 +1,3 @@
-// .questions__body {
-    
-
-//     @media screen and (min-width: $desktop) {
-//         display: flex;
-//     }
-// }
-
-// 
-
-// .questions__text {
-//     font-family: var(--general-font);
-//     font-size: 18px;
-//     line-height: 115%;
-//     color: var(--text-color-general);
-
-//     @media screen and (min-width: $tablet) {
-//         font-size: 20px;  
-//     }
-// }
-
-// .questions__faq {
-//     min-width: 320px;
-//     margin-bottom: 30px;
-//     border-bottom: 2px solid #EDEDED;
-
-//     @media screen and (min-width: $tablet) {
-//         width: 730px;
-//     }
-
-//     @media screen and (min-width: $desktop) {
-//         width: 640px;
-//     }
-// }
-
-// .questions__list {
-//     padding: 0;
-// }
-
-// .questions__list li {
-//     display: flex;
-// }
-
-// .questions__icon {
-//     margin-right: auto;
-// }
-
 .faq__body {
     display: block;
 
@@ -55,7 +8,7 @@
 
 .faq__form {
     display: block;
-    min-width: 320px;
+    min-width: 220px;
     margin-bottom: 100px;
     height: auto;
 
@@ -74,15 +27,11 @@
 
     @media screen and (min-width: $desktop) {
         margin-left: 130px;
-        min-width: 420px;
+        // min-width: 420px;
     }
 }
 
-.faq__form__input {
-  @media screen and (min-width: $tablet) {
-    margin-right: 50px;
-    margin-left: 50px;
-}
+  .faq__form__input {
 }
 
 
@@ -98,7 +47,7 @@
     padding: 15px 20px;
     margin-top: 24px;
 
-    min-width: 280px;
+    min-width: 220px;
     height: 48px;
 
     background: #F4F6FA;
@@ -118,7 +67,7 @@
 .faq__form-bt {
     cursor: pointer;
     margin-top: 24px;
-    min-width: 280px;
+    min-width: 220px;
     min-height: 50px;
 
     border: 1px solid #000000;
@@ -133,82 +82,11 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 20px;
+        width: 280px;
     }
 }
 
-// .plus::after,
-// .plus::before {
-//     content: '';
-//     display: block;
-//     border: 1px black solid;
-//     width: 2px;
-//     height: 20px;
-//     border-radius: 50%;
-// }
 
-// .plus::before {
-//     position: absolute;
-//     transform: rotate(90deg);
-// }
-
-// .layout {
-//     width: 600px;
-//     margin: auto;
-//   }
-
-// .accordion {
-//   }
-//   .accordion__question p {
-//     cursor: pointer;
-//     width: 640px;
-//     margin-bottom: 20px;
-
-//     font-family: var(--general-font);
-//     font-weight: 500;
-//     font-size: 20px;
-//     line-height: 115%;
-//     color: var(--text-color-general);
-
-//     @media screen and (min-width: $tablet) {
-//         font-size: 22px;
-//     }
-
-//     @media screen and (min-width: $desktop) {
-//         font-size: 24px;
-//     }
-//   }
-
-//   .accordion__answer p {
-//     font-family: var(--second-font);
-//     font-size: 24px;
-//     line-height: 125%; 
-//     text-transform: uppercase;
-//     color: var(--color-title-first);
-
-//     @media screen and (min-width: $tablet) {
-//         font-size: 28px;
-//     }
-
-//     @media screen and (min-width: $desktop) {
-//         font-size: 30px;
-//     }
-//   }
-
-//   .accordion:hover {
-//     cursor: pointer;
-//   }
-
-//   .accordion__answer {
-//     display: none;
-//   }
-
-//   .accordion.active .accordion__answer {
-//     display: block;
-//   }
-
-//   .faq__form-text {
-    
-// }
 
 .layout {
     margin-bottom: 100px;
@@ -222,16 +100,16 @@
     // border-bottom: 2px solid #EDEDED;
     
     // width: 640px;
-    min-width: 320px;
+    min-width: 280px;
     margin-bottom: 30px;
     border-bottom: 2px solid #EDEDED;
 
     @media screen and (min-width: $tablet) {
-        width: 730px;
+        // width: 730px;
     }
 
     @media screen and (min-width: $desktop) {
-        max-width: 640px;
+        width: 640px;
     }
 
   }
@@ -299,34 +177,4 @@
     transform: rotate(-45deg);
   }
 
-  // .accordion__question span::before {
-  //   position: absolute;
-  //   width: 0px;
-  //   height: 20px;
-  //   right: 0;
-  //   top: 0;
-  //   border-radius: 30%;
-  //   border: 2px solid #000000;
-  //   transform: rotate(180deg);
-  // }
-
-  // .accordion.active .accordion__question span::before {
-  //   transform: rotate(-45deg);
-  // }
-
-  // .accordion__question::before {
-  //   content: "";
-  //   display: flex;
-  //   width: 0px;
-  //   height: 20px;
-  //   left: 20px;
-  //   top: 10px;
-    
-  //   border: 2px solid #000000;
-  //   transform: rotate(90deg);
-  // }
-
-  // .accordion.active .accordion__question::before {
-  //   content: "";
-  //   transform: rotate(45deg);
-  // }
+  
