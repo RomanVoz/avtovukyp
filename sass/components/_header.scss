@@ -266,11 +266,24 @@
     }
 
     .header__contact--first {
-        display: block;
+        display: flex;
+        align-items: center;
         position: absolute;
         z-index: 5;
         left: 50%;
-        top: 10px;
+        top: 30px;
+    }
+
+    .header__phone--mob {
+        font-family: var(--general-font);
+        font-size: 14px;
+        line-height: 115%;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+    }
+    
+    .header__phone--mob.active {
+        color: #000000;
     }
 
     body.lock {

@@ -231,11 +231,26 @@ details > summary {
             filter: invert(0);
   }
   .header__contact--first {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     z-index: 5;
     left: 50%;
-    top: 10px;
+    top: 30px;
+  }
+  .header__phone--mob {
+    font-family: var(--general-font);
+    font-size: 14px;
+    line-height: 115%;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+  }
+  .header__phone--mob.active {
+    color: #000000;
   }
   body.lock {
     overflow: hidden;
