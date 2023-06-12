@@ -9,6 +9,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <title>Автовикуп Київ та Київська область - Просто</title>
     <meta name="description" content="Автовикуп у Києві ✓ Швидко та дорого з Автовикуп - Просто
     за 1 годину. ✓ Вигідно ☎ (068) 599-09-90">
@@ -18,15 +19,15 @@
 <header class="header header--scrolled">
     <div class="header__container container">
       <div class="header__body">
-        <a href="" class="header__logo header__logo--white">
+        <a href="#" class="header__logo header__logo--white">
           <img src="./img/Logo/logo-footer.png" alt="">
         </a>
         <div class="header__contact--first">
             <a class="header__phone--mob" href="tel:0685990990">+38 (068)-599-0990</a>
-              <a class="text__telegram" target="_blank" href="https://t.me/AvtoProsto_bot">
-                <svg class="icon-telegram" width="24" height="24">
+              <!-- <a class="text__telegram" target="_blank" href="https://t.me/AvtoProsto_bot"> -->
+                <!-- <svg class="icon-telegram" width="24" height="24">
               <use class="" href="./img/icons.svg#telegram"></use>
-                </svg></a>
+                </svg></a> -->
         </div>
             <div class="header__burger">
                 <span></span>
@@ -34,34 +35,46 @@
             <nav class="header__menu">
                 <ul class="header__list">
                     <li>
-                        <a href="" class="header__link">О нас</a>
+                        <a href="#about"  class="header__link white">Про нас</a>
+                    </li>
+                    <!-- <li>
+                        <a href="" class="header__link white">Статьи</a>
+                    </li> -->
+                    <li>
+                        <a href="#faq" class="header__link white">Поширені запитання</a>
                     </li>
                     <li>
-                        <a href="" class="header__link">Статьи</a>
+                        <a href="#services" class="header__link white">Послуги</a>
                     </li>
                     <li>
-                        <a href="" class="header__link">Услуги</a>
-                    </li>
-                    <li>
-                        <a href="" class="header__link">Контакты</a>
+                        <a href="#contact" class="header__link white">Контакти</a>
                     </li>
                 </ul>
             </nav>
+            
+              
             <div class="header__contact">
-                <a class="header__phone" href="tel:0685990990">+38 (068)-599-0990</a>
+                <a class="header__phone white" href="tel:0685990990">+38 (068)-599-0990</a>
                 <div class="header__telegram">
-                  <a class="text__telegram" target="_blank" href="https://t.me/AvtoProsto_bot"> Написати у Telegram 
+                  <a class="text__telegram white" target="_blank" href="https://t.me/AvtoProsto_bot"> Написати у Telegram 
                     <svg class="icon-telegram" width="24" height="24">
                   <use class="" href="./img/icons.svg#telegram"></use>
                     </svg></a>
                 </div>
             </div>
+            <div class="language-switcher">
+                <select id="language-select">
+                  <option value="en">English</option>
+                  <option value="fr">Français</option>
+                  <option value="es">Español</option>
+                </select>
+              </div>
       </div>
     </div>
   </header>
 
 <!-- HERO -->
-    <section class="hero">
+    <section id="services" class="hero">
         <div class="container">
             <div class="hero__body">
                 <h1 class="hero__title">Автовикуп просто <br><span class="hero__title-second">у Києві та Київській області</span></h1>
@@ -233,7 +246,7 @@
   </section>
 
     <!-- WHY US -->
-    <section>
+    <section id="about">
     <div class="container">
         <div class="why__avto">
                 <h2 class="steps__title">Чому саме "автовикуп просто"?</h2>
@@ -410,7 +423,7 @@
     </div>
     </section>
 <!-- FAQ -->
-<section class="container">
+<section id="faq" class="container">
     <h2 class="steps__title">Поширені запитання</h2>
         <div class="title__bullet">
             <svg class="icon-bullet" width="19" height="12">
@@ -522,7 +535,7 @@
     </div>
   </section>
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.4826926781802!2d30.54897187687133!3d50.33890179538892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7ac71ad794f%3A0x8a9a9df4ac502bc8!2z0YPQuy4g0J_QtdGA0LXQtNC-0LLQsNGPLCAxOSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1684962992665!5m2!1sru!2sua"
   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -585,6 +598,7 @@
   >
 </script>
   <script defer src="./js/mobile-menu.js"></script>
+  <script defer src="./js/scroll.js"></script>
   <script defer src="./js/tgForm.js"></script>
   <script defer src="./js/script.js"></script>
   <script defer src="./js/faq.js"></script>
