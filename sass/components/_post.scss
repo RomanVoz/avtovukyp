@@ -1,0 +1,25 @@
+.container-post {
+    max-width: 970px;
+    margin-bottom: 100px;
+}
+
+.post__title {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    max-width: 960px;
+
+    font-family: var(--second-font);
+    font-size: 30px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: var(--text-color-general);
+}
+
+.post__text {
+    margin-bottom: 15px;
+    
+    font-family: var(--general-font);
+    font-size: 20px;
+    line-height: 115%;
+    color: #000000;
+}

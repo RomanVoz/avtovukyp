@@ -35,40 +35,38 @@
             <nav class="header__menu">
                 <ul class="header__list">
                     <li>
-                        <a href="#about"  class="header__link white">Про нас</a>
+                        <a href="#about"  class="header__link">Про нас</a>
                     </li>
                     <!-- <li>
-                        <a href="" class="header__link white">Статьи</a>
+                        <a href="" class="header__link ">Статьи</a>
                     </li> -->
                     <li>
-                        <a href="#faq" class="header__link white">Поширені запитання</a>
+                        <a href="#faq" class="header__link">Поширені запитання</a>
                     </li>
                     <li>
-                        <a href="#services" class="header__link white">Послуги</a>
+                        <a href="#services" class="header__link">Послуги</a>
                     </li>
                     <li>
-                        <a href="#contact" class="header__link white">Контакти</a>
+                        <a href="#contact" class="header__link">Контакти</a>
                     </li>
                 </ul>
             </nav>
+            <select class="language" id="languageSelect" onchange="redirectToPage()">
+                <option value="uk">uk</option>
+                <option value="ru">ru</option>
+                <option value="en">en</option>
+              </select>
             
               
             <div class="header__contact">
-                <a class="header__phone white" href="tel:0685990990">+38 (068)-599-0990</a>
+                <a class="header__phone" href="tel:0685990990">+38 (068)-599-0990</a>
                 <div class="header__telegram">
-                  <a class="text__telegram white" target="_blank" href="https://t.me/AvtoProsto_bot"> Написати у Telegram 
+                  <a class="text__telegram" target="_blank" href="https://t.me/AvtoProsto_bot"> Написати у Telegram 
                     <svg class="icon-telegram" width="24" height="24">
                   <use class="" href="./img/icons.svg#telegram"></use>
                     </svg></a>
                 </div>
             </div>
-            <div class="language-switcher">
-                <select id="language-select">
-                  <option value="en">English</option>
-                  <option value="fr">Français</option>
-                  <option value="es">Español</option>
-                </select>
-              </div>
       </div>
     </div>
   </header>
@@ -598,6 +596,7 @@
   >
 </script>
   <script defer src="./js/mobile-menu.js"></script>
+  <script defer src="./js/language.js"></script>
   <script defer src="./js/scroll.js"></script>
   <script defer src="./js/tgForm.js"></script>
   <script defer src="./js/script.js"></script>

@@ -13,13 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Автовыкуп просто</title>
 </head>
-<div class="language-switcher">
-  <select id="language-select">
-    <option value="uk">Укр</option>
-    <option value="ru">Рус</option>
-    <option value="en">En</option>
-  </select>
-</div>
+<select id="languageSelect" onchange="redirectToPage()">
+  <option value="uk">uk</option>
+  <option value="ru">ru</option>
+  <option value="en">en</option>
+</select>
 
 
     <script
@@ -30,6 +28,7 @@
   >
 </script>
 <script defer src="./js/test.js"></script>
+<script defer src="./js/language.js"></script>
 <script defer src="./js/mobile-menu.js"></script>
 <script defer src="./js/script.js"></script>
 <script defer src="./js/faq.js"></script>

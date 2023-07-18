@@ -105,6 +105,7 @@ details > summary {
   top: 0;
   left: 0;
   z-index: 100;
+  background-color: white;
 }
 
 .header::before {
@@ -118,8 +119,7 @@ details > summary {
 }
 
 .header--scrolled {
-  background-color: #313131;
-  opacity: 0.9;
+  background-color: white;
 }
 
 .header__container {
@@ -147,11 +147,6 @@ details > summary {
   height: 30px;
   position: relative;
   z-index: 3;
-}
-
-.header__logo--white {
-  -webkit-filter: invert(100%);
-          filter: invert(100%);
 }
 
 .header__logo img {
@@ -199,6 +194,11 @@ details > summary {
 .icon-telegram {
   fill: #37AEE2;
   background-color: #fff;
+}
+
+.language {
+  position: relative;
+  z-index: 1000;
 }
 
 .header__contact {
@@ -249,7 +249,7 @@ details > summary {
     font-family: var(--general-font);
     font-size: 14px;
     line-height: 115%;
-    color: #FFFFFF;
+    color: #000000;
     margin-bottom: 5px;
   }
   .header__phone--mob.active {
@@ -274,7 +274,7 @@ details > summary {
   }
   .header__burger span {
     position: absolute;
-    background-color: #FFFFFF;
+    background-color: #000000;
     left: 0;
     width: 100%;
     height: 4px;
@@ -286,7 +286,7 @@ details > summary {
   .header__burger::before,
   .header__burger::after {
     content: "";
-    background-color: #FFFFFF;
+    background-color: #000000;
     position: absolute;
     width: 100%;
     height: 4px;
@@ -355,19 +355,6 @@ details > summary {
     display: none;
   }
 }
-.language-switcher {
-  display: inline-block;
-  z-index: 5;
-}
-
-.language-switcher select {
-  padding: 5px;
-}
-
-.language-switcher select:focus {
-  outline: none;
-}
-
 .hero {
   padding-top: 120px;
   background-color: black;
@@ -1448,4 +1435,28 @@ details > summary {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+}
+
+.container-post {
+  max-width: 970px;
+  margin-bottom: 100px;
+}
+
+.post__title {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  max-width: 960px;
+  font-family: var(--second-font);
+  font-size: 30px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: var(--text-color-general);
+}
+
+.post__text {
+  margin-bottom: 15px;
+  font-family: var(--general-font);
+  font-size: 20px;
+  line-height: 115%;
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
