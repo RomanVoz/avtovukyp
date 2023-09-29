@@ -95,14 +95,20 @@
     background-color: #fff;
 }
 
+.languageSelect {
+    display: flex;
+}
+
 .language {
     position: relative;
     z-index: 100;
     height: 25px;
     font-family: var(--general-font);
-    font-size: 15px;
+    font-size: 20px;
     line-height: 115%;
     color: #000000;
+    
+    padding: 5px 5px;
 }
 
 .language__option {
@@ -152,6 +158,7 @@
     .header__phone--mob {
         font-family: var(--general-font);
         font-size: 14px;
+        font-weight: 600;
         line-height: 115%;
         color: #000000;
         margin-bottom: 5px;
@@ -275,6 +282,17 @@
 
     .header__contact {
         display: none;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .header__phone--mob {
+        font-family: var(--general-font);
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 115%;
+        color: #000000;
+        margin-bottom: 5px;
     }
 }
 
