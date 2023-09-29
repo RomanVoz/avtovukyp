@@ -89,9 +89,9 @@ details > summary {
   padding: 0 20px;
   height: auto;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -380,7 +380,7 @@ details > summary {
     display: none;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .header__phone--mob {
     font-family: var(--general-font);
     font-size: 12px;
