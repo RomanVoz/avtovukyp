@@ -6,6 +6,7 @@
   --text-color-general: #000000;
   --color-title-first: #020202;
   --color-title-second: #F1F8FA;
+  --color-grey: #B8BABE;
   --general-font: "Jost", sans-serif;
   --second-font: src: url(./fonts/DelaGothicOne-Regular) format("ttf"), sans-serif;
   --hover-btn: #503428;
@@ -93,9 +94,9 @@ details > summary {
     width: 480px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .container {
-    width: 1200px;
+    width: 1300px;
   }
 }
 
@@ -123,7 +124,7 @@ details > summary {
 }
 
 .header__container {
-  max-width: 1180px;
+  max-width: 1300px;
   margin: 0px auto;
   padding: 0px 10px;
 }
@@ -446,7 +447,7 @@ details > summary {
     text-align: end;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .hero__title {
     margin-top: 200px;
     font-size: 74px;
@@ -495,7 +496,7 @@ details > summary {
   border: 2px solid #FFFFFF;
   border-radius: 10px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .hero__list-icon li {
     width: 225px;
   }
@@ -511,7 +512,7 @@ details > summary {
   width: 90px;
   height: 70px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .hero__icon {
     width: auto;
     height: auto;
@@ -573,7 +574,7 @@ details > summary {
   text-transform: uppercase;
   color: var(--color-title-first);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .steps__title {
     font-size: 22px;
     font-size: 30px;
@@ -600,7 +601,7 @@ details > summary {
       justify-content: space-around;
   padding: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .speps__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -612,13 +613,13 @@ details > summary {
   height: 160px;
   margin-bottom: 40px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .speps__list li {
     padding-bottom: 250px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .speps__list li:not(:last-child) {
     margin-right: 140px;
   }
@@ -670,7 +671,7 @@ details > summary {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .form__avto-body label {
     display: inline;
   }
@@ -699,7 +700,7 @@ details > summary {
     width: 400px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .form__avto-text {
     width: 270px;
   }
@@ -720,7 +721,7 @@ details > summary {
     width: 400px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .form__avto-name {
     width: 270px;
   }
@@ -741,7 +742,7 @@ details > summary {
     width: 400px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .form__avto-bt {
     width: 270px;
   }
@@ -757,7 +758,7 @@ details > summary {
   fill: #503428;
   z-index: -1;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .icon-15 {
     top: 23%;
     left: 0;
@@ -774,7 +775,7 @@ details > summary {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .why__img {
     position: absolute;
     top: 0;
@@ -787,7 +788,7 @@ details > summary {
   position: relative;
   margin-left: auto;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .why__for-us-body {
     position: static;
     width: 400px;
@@ -813,7 +814,7 @@ details > summary {
   margin-bottom: 100px;
   padding: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .why__quality {
     margin-top: 115px;
     -ms-flex-wrap: nowrap;
@@ -848,7 +849,7 @@ details > summary {
 .credit__list {
   padding: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .credit__list {
     padding-bottom: 145px;
   }
@@ -869,7 +870,7 @@ details > summary {
   text-decoration-line: underline;
   color: var(--color-title-first);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .credit__text {
     font-size: 24px;
   }
@@ -939,7 +940,7 @@ details > summary {
   padding: 0;
   padding-bottom: 100px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .document__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1039,7 +1040,7 @@ details > summary {
 .faq__body {
   display: block;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .faq__body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1066,7 +1067,7 @@ details > summary {
   border-radius: 10px;
   text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .faq__form {
     margin-left: 130px;
   }
@@ -1129,7 +1130,7 @@ details > summary {
   margin-bottom: 30px;
   border-bottom: 2px solid #EDEDED;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .accordion {
     width: 640px;
   }
@@ -1215,7 +1216,7 @@ details > summary {
   display: none;
   z-index: 1111;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .footer__contacts {
     position: absolute;
     top: 35%;
@@ -1493,4 +1494,66 @@ details > summary {
   font-size: 20px;
   line-height: 115%;
   color: #000000;
+}
+
+.blog {
+  margin-top: 100px;
+}
+
+.blog__title {
+  font-family: var(--second-font);
+  color: var(--text-color-general);
+  font-size: 30px;
+  line-height: 125%;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.blog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.blog__list__wrapper {
+  max-width: 410px;
+}
+
+.blog--img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.blog-name {
+  font-family: var(--general-font);
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 115%;
+  color: var(--text-color-general);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.breadcrumbs {
+  padding-top: 60px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--general-font);
+  font-size: 18px;
+  line-height: 115%;
+  color: var(--color-grey);
+}
+
+.breadcrumbs span {
+  color: var(--color-grey);
 }/*# sourceMappingURL=main.css.map */

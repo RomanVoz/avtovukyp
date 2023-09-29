@@ -1,25 +1,599 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="8stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./css/itc-slider.css">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Jost:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Автовыкуп просто</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Автовикуп Київ та Київська область - Просто</title>
+    <meta name="description" content="Автовикуп у Києві ✓ Швидко та дорого з Автовикуп - Просто
+    за 1 годину. ✓ Вигідно ☎ (068) 599-09-90">
 </head>
-<select id="languageSelect" onchange="redirectToPage()">
-  <option value="uk">uk</option>
-  <option value="ru">ru</option>
-  <option value="en">en</option>
-</select>
 
+<!-- HEADER -->
+<header class="header header--scrolled">
+    <div class="header__container container">
+      <div class="header__body">
+        <a href="#" class="header__logo header__logo--white">
+          <img src="./img/Logo/logo-footer.png" alt="">
+        </a>
+        <div class="header__contact--first">
+            <a class="header__phone--mob" href="tel:0685990990">+38 (068)-599-0990</a>
+              <!-- <a class="text__telegram" target="_blank" href="https://t.me/AvtoProsto_bot">
+                 <svg class="icon-telegram" width="24" height="24">
+              <use class="" href="./img/icons.svg#telegram"></use>
+                </svg></a> -->
+        </div>
+            
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="#about"  class="header__link">Про нас</a>
+                    </li>
+                    <!-- <li>
+                        <a href="" class="header__link ">Статьи</a>
+                    </li> -->
+                    <li>
+                        <a href="vip" class="header__link">Викуп VIP</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="header__link">Послуги</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="header__link">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- <select class="language" id="languageSelect" onchange="redirectToPage()">
+                <option class="language__option" value="uk">укр</option>
+                <option class="language__option" value="ru">рус</option>
+                 <option class="language__option" value="en">en</option> 
+              </select> -->
+              <ul class="languageSelect">
+                <li class="language">
+                    <a class="language__option" href="http://127.0.0.1:5500/">UK</a>
+                </li>
+                <li class="language">
+                    <a class="language__option" href="http://127.0.0.1:5500/ru.html">RU</a>
+                </li>
+              </ul>
+              <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__contact">
+                <a class="header__phone" href="tel:0685990990">+38 (068)-599-0990</a>
+                <div class="header__telegram">
+                  <a class="text__telegram" target="_blank" href="https://t.me/AvtoProsto_bot"> Написати у Telegram 
+                    <svg class="icon-telegram" width="24" height="24">
+                  <use class="" href="./img/icons.svg#telegram"></use>
+                    </svg></a>
+                </div>
+            </div>
+      </div>
+    </div>
+  </header>
 
+<!-- HERO -->
+    <section id="services" class="hero">
+        <div class="container">
+            <div class="hero__body">
+                <h1 class="hero__title">Автовикуп просто <br><span class="hero__title-second">у Києві та Київській області</span></h1>
+                <ul class="hero__list-icon">
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-crush"></use>
+                            </svg>
+                            <p class="icon__text">Викуп авто після ДТП</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-speedIcon"></use>
+                            </svg>
+                            <p class="icon__text">Швидкий викуп авто</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-key"></use>
+                            </svg>
+                            <p class="icon__text">Викуп кредитних авто</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                    <li>
+                        <a class="hero__icon-link" href="">
+                            <svg class="hero__icon" width="125" height="100">
+                            <use href="./img/icons.svg#icon-machine"></use>
+                            </svg>
+                            <p class="icon__text">Викуп авто у юр. осіб</p>
+                        <!-- <button class="hero__btn" type="button">Подробнее</button> -->
+                        </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO-AVTO -->
+    <!-- <section>
+        <h2>Какие авто мы выкупаем?</h2>
+        <svg class="" width="" height="">
+          <use href="./img/icons.svg#icon-bullet"></use>
+        </svg><p>классы автомобилей подлежащие выкупу</p>
+        <ul>
+            <li>
+                <a href="">Легковые
+                    <img src="" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">Коммерческие
+                    <img src="" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">После ДТП
+                    <img src="" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">Проблемные
+                    <img src="" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">Авто в залоге
+                    <img src="" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">Грузовые
+                    <img src="" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">Дорогие (люкс)
+                    <img src="" alt="">
+                </a>
+            </li>
+        </ul>
+    </section> -->
+
+<!-- STEPS -->
+   <section>
+    <div class="container">
+        <h2 class="steps__title">Єтапи викупа авто</h2>
+        <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+            <p class="steps__text">від дзвінка до розрахунку</p>
+        </div>
+        <div class="steps__body">
+            <ul class="speps__list">
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-document2"></use>
+                    </svg>
+                    <p class="steps__icon-text">Заявка для оцінки авто</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-telephone"></use>
+                    </svg>
+                    <p class="steps__icon-text">Дзвінок автоексперту</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-deal"></use>
+                    </svg>
+                    <p class="steps__icon-text">Огляд вашего авто</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-document"></use>
+                    </svg>
+                    <p class="steps__icon-text">Укладання договору</p>
+                </li>
+                <li>
+                    <svg class="steps__icon" width="120" height="120">
+                    <use href="./img/icons.svg#icon-card"></use>
+                    </svg>
+                    <p class="steps__icon-text">Розрахунок у будь-якій формі</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FORM AVTO -->
+<section class="section__fon">
+    <div class="container">
+        <div class="form__avto">
+            <form id="avto-form" class="form__avto-body">
+                <span class="form__avto-text">Дізнайся вартість свого авто</span>
+                        <label for="name"></label>
+                        <input 
+                        class="form__avto-name" 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Ваше им'я" required>
+                        <label for="phone"></label>
+                        <input 
+                        class="form__avto-name" 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Номер телефону" required>
+                        <label for="car"></label>
+                        <input 
+                        class="form__avto-name" 
+                        type="text" 
+                        id="car" 
+                        name="car"
+                        placeholder="Марка авто" required>
+                    <button onclick="myFunction();" id="submit-btn" class="form__avto-bt" type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+  </section>
+
+    <!-- WHY US -->
+    <section id="about">
+    <div class="container">
+        <div class="why__avto">
+                <h2 class="steps__title">Чому саме "автовикуп просто"?</h2>
+                <div class="title__bullet">
+                    <svg class="icon-bullet" width="19" height="12">
+                    <use href="./img/icons.svg#icon-bullet"></use>
+                    </svg>
+                    <p class="steps__text">як ми завойовуємо довіру клієнтів</p>
+                </div>
+            <div class="why__for-us-body">
+                <h3 class="why__for-us">Про нас</h3>
+                <p class="why__text">
+                    Компанія автовикуп "Просто" - це 
+                    чудовий спосіб швидко та безпечно продати свій автомобіль. 
+                    Якщо ви знаходитесь в Києві або в Київській області та хочете 
+                    швидко реалізувати свій автомобіль без головного болю, звертайтеся до нас. 
+                    Наша компанія має більше ніж 15 років досвіду на ринку та 
+                    пропонує професійний сервіс по викупу автомобілів будь-яких 
+                    марок та моделей.</p>
+                    
+                <p class="why__text"> 
+                    Ми пропонуємо моментальну оцінку вашого автомобіля та 
+                    моментальний розрахунок за нього. Крім того, ми самі 
+                    займаємося зняттям автомобіля з обліку та переоформленням на 
+                    нашого покупця. Вам не потрібно хвилюватися про паперові 
+                    формальності, ми зробимо все за вас швидко та без зайвих 
+                    клопотів. Звертайтеся до нас та отримуйте професійний та 
+                    вигідний сервіс по викупу автомобілів в Києві та Київській 
+                    області.</p>   
+                <p>Просто. Швидко та надійно.</p>
+                        <svg class="icon-15" width="166" height="145">
+                        <use href="./img/icons.svg#15"></use>
+                        </svg>
+                <img loading ="lazy" class="why__img" src="./img/avto.png" alt="авто">
+            </div>
+            <ul class="why__quality">
+                <li>
+                    <p class="quality__title">Миттєва оцінка та викуп авто</p>
+                    <p class="why__text">Швидка оцінка та викуп вашого авто від наших професіоналів забезпечує оперативність та зручність процесу продажу</p>
+                </li>
+                <li>
+                    <p class="quality__title">Швидкий та зручний процес автовикупу</p>
+                    <p class="why__text">Отримайте швидкий та зручний автовикуп з мінімумом зусиль від нашої дружньої команди експертів</p>
+                </li>
+                <li>
+                    <p class="quality__title">Професійна оцінка вашого автомобіля</p>
+                    <p class="why__text">Наші професіонали забезпечують професійну оцінку вашого автомобіля, щоб ви отримали максимально вигідну пропозицію</p>
+                </li>
+                <li>
+                    <p class="quality__title">Безпечна та мінімалістична бюрократія</p>
+                    <p class="why__text">Безпечний та простий процес бюрократії дозволяє вам зручно та безпечно продати авто, мінімізуючи непотрібні клопоти</p>
+                </li>
+            </ul>
+        </div>
+</section>
+
+    <!-- CREDIT AVTO -->
+    <section class="credit section__fon">
+        <div class="container">
+            <h2 class="steps__title">Авто вже в заставі?</h2>
+            <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+                <p class="steps__text">для нас це не проблема</p>
+            </div>
+                <div class="credit__body">
+                    <img loading ="lazy" class="credit__many" src="./img/credit/many.png" alt="деньги">
+                    <img loading ="lazy" class="credit__lock" src="./img/credit/lock.png" alt="замок">
+                    <img loading ="lazy" class="credit__avto" src="./img/credit/avto.png" alt="авто">
+                    <ul class="credit__list">
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Викуп кредитних авто</p>
+                        </li>
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Викуп авто у заставі</p>
+                        </li>
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Викуп авто з ломбарду</p>
+                        </li>
+                        <li>
+                            <svg class="" width="30" height="30">
+                            <use href="./img/icons.svg#bullet"></use>
+                            </svg>
+                            <p class="credit__text">Викуп лізингових авто</p>
+                        </li>
+                    </ul>
+                    
+                </div>
+        </div>
+    </section>
+
+    <!-- DOCUMENT -->
+    <section>
+        <div class="container">
+            <h2 class="steps__title">Необхідні документи</h2>
+            <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+                <p class="steps__text">для швидкого викупу</p>
+            </div>
+            <ul class="document__list">
+                <li>
+                    <p class="document__text">Паспорт ТЗ</p>
+                </li>
+                <li>
+                    <p class="document__text">Паспорт або ID власника ТЗ</p>
+                </li>
+                <li>
+                    <p class="document__text">Номер банківського рахунку</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section__fon">
+        <div class="container">
+            <h2 class="steps__title" >Відгуки клієнтів </h2>
+            <div class="title__bullet">
+                <svg class="icon-bullet" width="19" height="12">
+                <use href="./img/icons.svg#icon-bullet"></use>
+                </svg>
+                <p class="steps__text">що про нас кажуть?</p>
+            </div>
+           <div class="slider ">
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Дмитрий</p>
+                    <p class="reviews__text">Швидко та зручно продав свій автомобіль. Викуп пройшов оперативно, без зайвої бюрократії!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Ольга</p>
+                    <p class="reviews__text">Професійна оцінка та викуп авто за рекордно короткий термін. Дуже задоволена результатом!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Михайло</p>
+                    <p class="reviews__text">Оцінка мого автомобіля пройшла моментально, а викуп було укладено того ж дня. Відмінний сервіс!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Олександр</p>
+                    <p class="reviews__text">Безпечна та надійна угода з автовикупу. Отримав хорошу ціну і швидко реалізував авто!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Денис</p>
+                    <p class="reviews__text">Дуже задоволений процесом викупу мого автомобіля. Швидко, професійно та без зайвих турбот!</p>
+                </div>
+            </div>
+            <div class="slider__item reviews__list">
+                <div class="">
+                    <p class="reviews__name">Роман</p>
+                    <p class="reviews__text">Приємно здивований швидкістю та якістю автовикупу. Рекомендую всім, хто хоче продати авто швидко та вигідно!</p>
+                </div>
+            </div>
+           </div>
+    </div>
+    </section>
+<!-- FAQ -->
+<section id="faq" class="container">
+    <h2 class="steps__title">Поширені запитання</h2>
+        <div class="title__bullet">
+            <svg class="icon-bullet" width="19" height="12">
+            <use href="./img/icons.svg#icon-bullet"></use>
+            </svg>
+            <p class="steps__text">все, що потрібно знати</p>
+        </div>
+    <div class="faq__body">
+        <div class="layout">
+            <div class="accordion">
+            <div class="accordion__question">
+                <p>
+                    Автомобіль не на ходу. Як його доставити?
+                </p>
+                <span></span>
+            </div>
+            <div class="accordion__answer">
+                <p class="faq__form-text">У нашій компанії є власні евакуатори, тому ми можем 
+                    забезпечити транспортування вашого автомобіля навіть у випадку, якщо він не 
+                    на ходу. Наші професійні водії-евакуаторники знають, як бережно та безпечно 
+                    перевозити автомобілі будь-яких марок та моделей, включаючи ті, які не можуть 
+                    рухатися самостійно. Ми гарантуємо швидку та надійну доставку вашого автомобіля 
+                    в потрібне місце найкоротшим терміном. Не хвилюйтеся про транспортування вашого 
+                    не на ходу автомобіля, ми з радістю допоможемо вам у цьому питанні.</p>
+            </div>
+            </div>
+            <div class="accordion">
+            <div class="accordion__question">
+                <p>Ви купуєте авто у юридичних осіб?</p>
+                <span></span>
+            </div>
+            <div class="accordion__answer">
+                <p class="faq__form-text">
+                    Так, наша компанія здійснює викуп автомобілів від юридичних осіб. Ми розуміємо, що 
+                    продаж автомобіля може стати необхідністю не лише для приватних осіб, але й для компаній. 
+                    Ми готові розглянути пропозиції від будь-яких юридичних осіб, включаючи автопарки компаній, 
+                    таксі, орендні компанії та інші організації. Ми цінуємо кожного нашого клієнта і готові 
+                    запропонувати індивідуальний підхід та вигідні умови для кожного випадку. Наша компанія має 
+                    великий досвід роботи з юридичними особами та гарантує швидкий і чесний викуп автомобілів за 
+                    найвигіднішими умовами.
+                </p>
+            </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Які умови продажу автомобіля через автовикуп?</p>
+                    <span></span>
+                </div>
+            
+                <div class="accordion__answer">
+                    <p class="faq__form-text">
+                        Основні умови включають пропозицію певної суми грошей за автомобіль, яку можна 
+                        обговорити. Крім того, необхідно мати всі необхідні документи на автомобіль, 
+                        включаючи техпаспорт або документи про право власності, а також інші 
+                        необхідні документи. Ці умови можуть відрізнятися залежно від компанії та місця проживання. 
+                        Рекомендується передавати документи компанії, яка займається автовикупом, тільки після остаточного 
+                        погодження умов продажу.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Які переваги пропонує автовикуп?</p>
+                    <span></span>
+                </div>
+            
+                <div class="accordion__answer">
+                    <p class="faq__form-text">
+                        Автовикуп - це швидкий та зручний спосіб продати свій автомобіль. На відміну від традиційних 
+                        способів продажу, таких як приватні оголошення або угоди через дилерів, автовикуп пропонує 
+                        миттєвий продаж автомобіля за готівку. Це означає, що ви зможете отримати гроші за свій 
+                        автомобіль вже сьогодні, без необхідності чекати на покупця або торгуватися за ціною.
+                    </p>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion__question">
+                    <p>Як оцінюються автомобілі в автовикупі?</p>
+                    <span></span>
+                </div>
+            
+                <div class="accordion__answer">
+                    <p class="faq__form-text">
+                        Експерти компанії автовикупу оцінюють автомобіль за кількома критеріями, такими як 
+                        марка, модель, рік випуску, технічний стан та пробіг. Оцінка може бути зроблена як 
+                        на основі фотографій та опису автомобіля, так і після особистого огляду автомобіля експертом.
+                    </p>
+                </div>
+            </div>
+    </div>
+    <form class="faq__form" id="faq-form">
+        <span class="questions__form-text">Чи залишилися ще питання?</span>
+        <div class="faq__form__input">
+          <label>
+            <input class="faq__form-name" type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+          </label>
+          <label>
+            <input class="faq__form-name" type="tel" id="phone" name="phone" placeholder="Номер телефону" required>
+          </label>
+          <label>
+            <input class="faq__form-name" type="text" id="car" name="car" placeholder="Марка авто" required>
+          </label>
+          <button id="submit-btn" type="submit" class="faq__form-bt">Отримати консультацію</button>
+        </div>
+      </form>
+            </div>
+        </div>
+    </div>
+  </section>
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.4826926781802!2d30.54897187687133!3d50.33890179538892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c7ac71ad794f%3A0x8a9a9df4ac502bc8!2z0YPQuy4g0J_QtdGA0LXQtNC-0LLQsNGPLCAxOSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1684962992665!5m2!1sru!2sua"
+  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="container">
+            <div class="footer__contacts">
+                <h2>Наші контакти</h2>
+                <p>Київ, вулиця Передова 19</p>
+                <!-- <p>autovykuprosto@gmail.com</p> -->
+                <p>+38 (068)-599-09-90</p>
+            </div>
+            <p class="copyright">Швидко, просто, надійно.  ⒸАвтовикуп-Просто</p>
+                <!-- <div class="footer__navigation">
+                    <div>
+                        <img loading ="lazy" class="footer__logo" src="./img/Logo/logo-footer.png" alt="лого">
+                        <span class="footer__logo-text">Швидко, просто, надійно.</span>
+                    </div>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Про нас</a>
+                        </li>
+                        <li>
+                            <a href="#">Розрахунок вартості</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Документи</a>
+                        </li>
+                        <li>
+                            <a href="#">Відгуки</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакти</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li>
+                            <a href="#">Послуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Викуп після ДТП</a>
+                        </li>
+                        <li>
+                            <a href="#">Викуп
+                                кредитних авто</a>
+                        </li>
+                        <li>
+                            <a href="#">Терміновий викуп</a>
+                        </li>
+                    </ul>
+                </div> -->
+        </div>
+    </footer>
     <script
     defer
     src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -27,13 +601,23 @@
     crossorigin="anonymous"
   >
 </script>
-<script defer src="./js/test.js"></script>
-<script defer src="./js/language.js"></script>
-<script defer src="./js/mobile-menu.js"></script>
-<script defer src="./js/script.js"></script>
-<script defer src="./js/faq.js"></script>
-<script defer src="./js/slick.min.js"></script>
-<script defer src="./js/button.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
+  <script defer src="./js/language.js"></script>
+  <script defer src="./js/scroll.js"></script>
+  <script defer src="./js/tgForm.js"></script>
+  <script defer src="./js/script.js"></script>
+  <script defer src="./js/faq.js"></script>
+  <script defer src="./js/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2SZVREB4XZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2SZVREB4XZ');
+</script>
 </body>
 </html>
