@@ -197,6 +197,10 @@ details > summary {
   background-color: #fff;
 }
 
+.icon-viber {
+  border-radius: 50%;
+}
+
 .languageSelect {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1209,32 +1213,7 @@ details > summary {
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  display: none;
   z-index: 1111;
-}
-@media screen and (min-width: 1300px) {
-  .footer__contacts {
-    position: absolute;
-    top: 35%;
-    left: 30%;
-    -webkit-transform: translate(-70%, -100%);
-            transform: translate(-70%, -100%);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 50px 30px 60px;
-    gap: 40px;
-  }
 }
 
 .map {
