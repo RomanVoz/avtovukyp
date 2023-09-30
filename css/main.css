@@ -1024,10 +1024,6 @@ details > summary {
   color: var(--text-color-general);
 }
 
-.footer__list {
-  margin-left: 75px;
-}
-
 .footer__list > li {
   padding-bottom: 20px;
   font-family: var(--general-font);
@@ -1274,6 +1270,9 @@ details > summary {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__text {
