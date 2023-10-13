@@ -1,22 +1,89 @@
 .contact {
     display: flex;
     margin-top: 120px;
+
+    @media screen and (max-width: $tablet) {
+        display: block;
+        }
 }
 
-.contact-title {
+.contact__title {
     color: var(--text-color-general);
     font-family: var(--second-font);
     font-size: 30px;
     line-height: 125%;
     text-transform: uppercase;
+
+    margin-top: 85px;
 }
 
-.contact-adres {
+.contact__list {
+    padding: 0;
+}
 
+.contact__item {
+    margin-top: 5px;
+}
+
+.contact__info {
+    color: var(--color-title-first);
+    font-family: var(--general-font);
+    font-size: 22px;
+    line-height: 145%; /* 31.9px */
+}
+
+.contact__label {
+    color: var(--color-grey);
+    font-family: var(--general-font);
+    font-size: 20px;
+    line-height: 115%; /* 23px */
+
+    margin-top: 50px;
 }
 
 .contact__map {
-    width: 860px;
-    height: 550px;
+    margin-top: 20px;
     margin-left: 90px;
+    width: 860px;
+    max-height: 860px;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+        height: 600px;
+        margin-left: 0;
+        margin-top: 30px;
+        }
+}
+
+.contact__button {
+    color: var(--text-color-general);
+    font-family: var(--general-font);
+    font-size: 20px;
+    line-height: 115%;
+    
+    margin-top: 20px;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background-color: var(--color-title-second);
+    cursor: pointer;
+}
+
+.contact__message-icon {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 100px;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: start;
+        gap: 30px;
+        }
+}
+
+.contact__message-icon li {
 }
