@@ -1,0 +1,22 @@
+.contact {
+    display: flex;
+    margin-top: 120px;
+}
+
+.contact-title {
+    color: var(--text-color-general);
+    font-family: var(--second-font);
+    font-size: 30px;
+    line-height: 125%;
+    text-transform: uppercase;
+}
+
+.contact-adres {
+
+}
+
+.contact__map {
+    width: 860px;
+    height: 550px;
+    margin-left: 90px;
+}
